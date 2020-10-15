@@ -117,196 +117,214 @@
         color: #FFFFFF;
     }
 }
- .dark-eclipce{
-     position: absolute;
+
+.dark-eclipce {
+    position: absolute;
     width: 3.31px;
     height: 3.31px;
     background: #2667FF;
     opacity: 0.8;
     border-radius: 50%;
     animation: 14s linear infinite alternate;
- }
- .dark1{
-     left: 65%;
-     animation-name: dark1;
- }
+}
 
- .dark5{
+.dark1 {
+    left: 65%;
+    animation-name: dark1;
+}
+
+.dark5 {
     margin-left: 20px;
     left: 63%;
     animation-name: dark5;
-   }
-   @keyframes dark5{
-    0%{
+}
+
+@keyframes dark5 {
+    0% {
         left: 63%;
         margin-top: 0px;
     }
-    100%{
+
+    100% {
         left: 66%;
         margin-top: 70px;
     }
 }
-.dark6{
+
+.dark6 {
     margin-left: 20px;
     left: 58%;
     animation-name: dark6;
-   }
-   @keyframes dark6{
-    0%{
+}
+
+@keyframes dark6 {
+    0% {
         left: 58%;
         margin-top: 0px;
     }
-    100%{
+
+    100% {
         left: 67%;
         margin-top: 40px;
     }
 }
- @keyframes dark1{
-     0%{
-         left: 65%;
-         margin-top: 10px;
-     }
-    
-     100%{
-         left: 60%;
-         margin-top: 40px;
-     }
- }
- .dark2{
-     margin-top: 25px;
+
+@keyframes dark1 {
+    0% {
+        left: 65%;
+        margin-top: 10px;
+    }
+
+    100% {
+        left: 60%;
+        margin-top: 40px;
+    }
+}
+
+.dark2 {
+    margin-top: 25px;
     left: 60%;
     animation-name: dark2;
 }
-@keyframes dark2{
-    0%{
+
+@keyframes dark2 {
+    0% {
         left: 60%;
         margin-top: 25px;
     }
-  
-    100%{
+
+    100% {
         left: 50%;
         margin-top: 0px;
     }
 }
-.dark3{
+
+.dark3 {
     margin-top: 48px;
-   left: 63%;
-   animation-name: dark3;
+    left: 63%;
+    animation-name: dark3;
 }
-@keyframes dark3{
-    0%{
+
+@keyframes dark3 {
+    0% {
         left: 63%;
-     
+
     }
-    100%{
+
+    100% {
         left: 50%;
         margin-top: 60px;
     }
 }
-.dark4{
-    margin-top:190px ;
+
+.dark4 {
+    margin-top: 190px;
     left: 65%;
     animation-name: dark4;
-@keyframes dark4{
-    0%{
-        left: 68%;
-        margin-top:190px ;
-    }
-    100%{
-        left: 75%;
-        margin-top:180px ;
-    }
 }
+    @keyframes dark4 {
+        0% {
+            left: 68%;
+            margin-top: 190px;
+        }
 
-@media (max-width: 1269px) {
-    .benefits  h3{
-   
+        100% {
+            left: 75%;
+            margin-top: 180px;
+        }
+    }
+
+    @media (max-width: 1269px) {
+        .benefits h3 {
+
             font-size: 44px;
             line-height: 54px;
             text-align: left;
- 
-      
-    }
-    }
 
-@media (max-width: 1080px){
-#canvas{
-   width: 600px;
-   margin-left: -70px;
-   margin-right: 70px;
-}
-}
-
-@media (max-width: 991px) {
-    .benefits {
-        h3 {
-            font-size: 44px;
-            line-height: 54px;
-            text-align: center;
-        
-        }
-    }
-    .our_services {
-        padding-top: 0px;
-    }
-
-    #canvas {
-        display: none;
-    }
-canvas{
-    display: none;
-}
-    #accordion {
-        margin-left: 30px;
-    }
-}
-
-@media (max-width: 575px) {
-    .benefits {
-        h3 {
-            font-size: 32px;
-            line-height: 40px;
-            text-align: center;
-        
-        }
-    }
-    #accordion {
-        margin-left: 0px;
-        margin-right: -30px;
-    }
-
-    .text-services {
-
-        h2 {
-            font-weight: bold;
-            font-size: 36px;
-            line-height: 48px;
 
         }
     }
 
-    .services-item {
-        padding-left: 20px;
-        font-size: 18px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-
-    .services-item-body {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 30px;
-    }
-
-    .text-services .general-text {
-        margin-top: -30px;
-
-        .under-btn {
-            right: 10px;
+    @media (max-width: 1080px) {
+        #canvas {
+            width: 600px;
+            margin-left: -70px;
+            margin-right: 70px;
         }
     }
 
-}
-}
+    @media (max-width: 991px) {
+        .benefits {
+            h3 {
+                font-size: 44px;
+                line-height: 54px;
+                text-align: center;
 
+            }
+        }
+
+        .our_services {
+            padding-top: 0px;
+        }
+
+        #canvas {
+            display: none;
+        }
+
+        canvas {
+            display: none;
+        }
+
+        #accordion {
+            margin-left: 30px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .benefits {
+            h3 {
+                font-size: 32px;
+                line-height: 40px;
+                text-align: center;
+
+            }
+        }
+
+        #accordion {
+            margin-left: 0px;
+            margin-right: -30px;
+        }
+
+        .text-services {
+
+            h2 {
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 48px;
+
+            }
+        }
+
+        .services-item {
+            padding-left: 20px;
+            font-size: 18px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .services-item-body {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+        }
+
+        .text-services .general-text {
+            margin-top: -30px;
+
+            .under-btn {
+                right: 10px;
+            }
+        }
+
+    }
  
