@@ -1481,6 +1481,7 @@ header {
   -webkit-animation-name: dark4;
           animation-name: dark4;
 }
+
 @-webkit-keyframes dark4 {
   0% {
     left: 68%;
@@ -1491,6 +1492,7 @@ header {
     margin-top: 180px;
   }
 }
+
 @keyframes dark4 {
   0% {
     left: 68%;
@@ -1502,72 +1504,80 @@ header {
   }
 }
 @media (max-width: 1269px) {
-  .dark4 .benefits h3 {
+  .benefits h3 {
     font-size: 44px;
     line-height: 54px;
     text-align: left;
   }
 }
 @media (max-width: 1080px) {
-  .dark4 #canvas {
+  #canvas {
     width: 600px;
     margin-left: -70px;
     margin-right: 70px;
   }
 }
 @media (max-width: 991px) {
-  .dark4 .benefits h3 {
+  .benefits h3 {
     font-size: 44px;
     line-height: 54px;
     text-align: center;
   }
-  .dark4 .our_services {
+
+  .our_services {
     padding-top: 0px;
   }
-  .dark4 #canvas {
+
+  #canvas {
     display: none;
   }
-  .dark4 canvas {
+
+  canvas {
     display: none;
   }
-  .dark4 #accordion {
+
+  #accordion {
     margin-left: 30px;
   }
 }
 @media (max-width: 575px) {
-  .dark4 .benefits h3 {
+  .benefits h3 {
     font-size: 32px;
     line-height: 40px;
     text-align: center;
   }
-  .dark4 #accordion {
+
+  #accordion {
     margin-left: 0px;
     margin-right: -30px;
   }
-  .dark4 .text-services h2 {
+
+  .text-services h2 {
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
   }
-  .dark4 .services-item {
+
+  .services-item {
     padding-left: 20px;
     font-size: 18px;
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  .dark4 .services-item-body {
+
+  .services-item-body {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 30px;
   }
-  .dark4 .text-services .general-text {
+
+  .text-services .general-text {
     margin-top: -30px;
   }
-  .dark4 .text-services .general-text .under-btn {
+  .text-services .general-text .under-btn {
     right: 10px;
   }
 }
-
 .bg-vont {
   background: url(../../img/about/bg-about.png);
   background-size: cover;
