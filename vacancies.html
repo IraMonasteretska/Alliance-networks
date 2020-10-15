@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alliance-networks</title>
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <!-- npm run watch -->
+  <body>
+    <section class="vacancies">
+      <div class="vacancies__container">
+        <nav class="banner-nav">
+          <a class="banner-nav__home"> Home &nbsp; / &nbsp;</a>
+          <a href="#" class="banner-nav__this-page"> News</a>
+        </nav>
+        <div class="vacancies__title">
+          Vacancies
+        </div>
+
+        <form class="vacancies__form">
+          <div class="vacancies__sort-container">
+            <div class="sort__by-container sort__by-container-position">
+              <div class="sort__by-category sort__by-category-position sbc-first-child" > Position </div>
+               <ul class="sort__category-ul sort__category-ul-position">
+                <li class="sort__category"><label for="pos-val-1"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-1" name="val" value="val">Software Development</label></li>
+                <li class="sort__category"><label for="pos-val-2"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-2" name="val" value="val">Quality Control </label></li>
+                <li class="sort__category"><label for="pos-val-3"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-3" name="val" value="val">Project Management</label></li>
+                <li class="sort__category"><label for="pos-val-4"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-4" name="val" value="val">Business Analysis</label></li>
+                <li class="sort__category"><label for="pos-val-1"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-1" name="val" value="val">Software Development</label></li>
+                <li class="sort__category"><label for="pos-val-2"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-2" name="val" value="val">Quality Control </label></li>
+                <li class="sort__category"><label for="pos-val-3"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-3" name="val" value="val">Project Management</label></li>
+                <li class="sort__category"><label for="pos-val-4"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-4" name="val" value="val">Business Analysis</label></li>
+                <li class="sort__category"><label for="pos-val-1"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-1" name="val" value="val">Software Development</label></li>
+                <li class="sort__category"><label for="pos-val-2"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-2" name="val" value="val">Quality Control </label></li>
+                <li class="sort__category"><label for="pos-val-3"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-3" name="val" value="val">Project Management</label></li>
+              </ul>
+              <p class=""><input type="button" class="button-test-position button-test" value="Select All"> </p>
+              </div>
+              <div class="sort__by-container sort__by-container-level">
+                <div class="sort__by-category sort__by-category-level" > Levels </div>
+                 <ul class="sort__category-ul sort__category-ul-level">
+                  <li class="sort__category "><label for="lev-val-1"><input class="sort__category-checkbox" type="checkbox" id="lev-val-1" name="val" value="val">Junior</label> </li>
+                  <li class="sort__category"><label for="lev-val-2"> <input class="sort__category-checkbox" type="checkbox" id="lev-val-2" name="val" value="val">Middle</label></li>
+                  <li class="sort__category"><label for="lev-val-3"> <input class="sort__category-checkbox" type="checkbox" id="lev-val-3" name="val" value="val">Senior</label></li>
+                  <li class="sort__category"><label for="lev-val-4"> <input class="sort__category-checkbox" type="checkbox" id="lev-val-4" name="val" value="val">Leader</label></li>
+                </ul>
+                <p class=""><input type="button" class="button-test-level button-test" value="Select All"> </p>
+               
+                </div>
+                <div class="sort__by-container sort__by-container-tag">
+                  <div class="sort__by-category sort__by-category-tag" > Tags </div>
+                   <ul class="sort__category-ul sort__category-ul-tag">
+                    <li class="sort__category"><label for="tag-val-1"> <input class="sort__category-checkbox" type="checkbox" id="tag-val-1" name="val" value="val">Hot</label></li>
+                    <li class="sort__category"><label for="tag-val-2"> <input class="sort__category-checkbox" type="checkbox" id="tag-val-2" name="val" value="val">Onsite</label></li>
+                    <li class="sort__category"><label for="tag-val-3"> <input class="sort__category-checkbox" type="checkbox" id="tag-val-3" name="val" value="val">Remote Allowed</label></li>
+                  </ul>
+                  <p class=""><input type="button" class="button-test-tag button-test" value="Select All"> </p>
+                  </div>
+            <input
+              type="text"
+              class="sort__search sort__search-vacancies"
+              id="searchInput"
+              placeholder="What are you looking for?"
+              value=""
+            />
+            <input type="submit" class="sort__button sort__button-vacancies" value="" />
+            <div class="sort__close-search vacancies__sort__close-search" id="clearSearch"></div>
+          </div>
+          <div class="mobile-search-blog">
+            <input type="text" class="sort__search mobile-search sort__search-vacancies-mobile" id="searchInput" placeholder="What are you looking for?" value="">
+            <input type="submit" class="sort__button mobile-search sort__button-vacancies-mobile"  value="">
+          </div>
+        </form>
+        <div class="sort__tags-container vacancies__sort__tags-container">
+          <button class="sort__tags-clear">Clear All</button>
+          <p class="sort__tags">
+            Middle <span class="sort__tags-close"></span>
+          </p>
+          <p class="sort__tags">UI/UX<span class="sort__tags-close"></span></p>
+          <p class="sort__tags">
+            Learning & Certification <span class="sort__tags-close"></span>
+          </p>
+        </div>
+
+        <div class="vacancies__result">
+          <p class="vacancies__result-text">Result: &nbsp; </p>
+          <p class="vacancies__result-inner"> 28 vacancies</p>
+        </div>
+        <div class="vacancies__items">
+
+          <div class="vacancies__item">
+            <div class="vacancies__item-container">
+            <a href="#">  <a href="#"> <h4 class="vacancies__item-title">
+                Middle WebUI Software Engineer
+              </h4></a> </a> 
+              <div class="vacancies__item-line"></div>
+              <div class="vacancies__item-data-container">
+                <p class="vacancies__item-spec">SOFTWARE DEVELOPMENT</p>
+                <p class="vacancies__item-data">
+                  1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="vacancies__item">
+            <div class="vacancies__item-container">
+         <a href="#"> <h4 class="vacancies__item-title">
+                Full-stack JS developer (back end oriented)
+              </h4></a>
+              <div class="vacancies__item-line"></div>
+              <div class="vacancies__item-data-container">
+                <p class="vacancies__item-spec">SOFTWARE DEVELOPMENT</p>
+                <p class="vacancies__item-data">
+                  1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          
+          <div class="vacancies__item">
+            <div class="vacancies__item-container">
+               <a href="#"> <h4 class="vacancies__item-title">
+                Full-Stack JavaScript Developer
+              </h4></a> 
+              <div class="vacancies__item-line"></div>
+              <div class="vacancies__item-data-container">
+                <p class="vacancies__item-spec">SOFTWARE DEVELOPMENT</p>
+                <p class="vacancies__item-data">
+                  1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          
+          <div class="vacancies__item">
+            <div class="vacancies__item-container">
+               <a href="#"> <h4 class="vacancies__item-title">
+                Content Creator/ Marketing Specialist (part-time)
+              </h4></a> 
+              <div class="vacancies__item-line"></div>
+              <div class="vacancies__item-data-container">
+                <p class="vacancies__item-spec">SOFTWARE DEVELOPMENT</p>
+                <p class="vacancies__item-data">
+                  1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          
+          <div class="vacancies__item">
+            <div class="vacancies__item-container">
+               <a href="#"> <h4 class="vacancies__item-title">
+                Middle WordPress developer
+              </h4></a> 
+              <div class="vacancies__item-line"></div>
+              <div class="vacancies__item-data-container">
+                <p class="vacancies__item-spec">SOFTWARE DEVELOPMENT</p>
+                <p class="vacancies__item-data">
+                  1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          
+          <div class="vacancies__item">
+            <div class="vacancies__item-container">
+               <a href="#"> <h4 class="vacancies__item-title">
+                Middle/Senior Front-end developer
+
+
+              </h4></a> 
+              <div class="vacancies__item-line"></div>
+              <div class="vacancies__item-data-container">
+                <p class="vacancies__item-spec">SOFTWARE DEVELOPMENT</p>
+                <p class="vacancies__item-data">
+                  1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          
+          <div class="vacancies__item">
+            <div class="vacancies__item-container">
+               <a href="#"> <h4 class="vacancies__item-title">
+                Middle WebUI Software Engineer
+              </h4></a> 
+              <div class="vacancies__item-line"></div>
+              <div class="vacancies__item-data-container">
+                <p class="vacancies__item-spec">SOFTWARE DEVELOPMENT</p>
+                <p class="vacancies__item-data">
+                  1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="vacancies__item">
+            <div class="vacancies__item-container">
+               <a href="#"> <h4 class="vacancies__item-title">
+                Full-Stack JavaScript Developer
+              </h4></a> 
+              <div class="vacancies__item-line"></div>
+              <div class="vacancies__item-data-container">
+                <p class="vacancies__item-spec">SOFTWARE DEVELOPMENT</p>
+                <p class="vacancies__item-data">
+                  1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="vacancies__item">
+            <div class="vacancies__item-container">
+               <a href="#"> <h4 class="vacancies__item-title">
+                Full-stack JS developer (back end oriented)
+              </h4></a> 
+              <div class="vacancies__item-line"></div>
+              <div class="vacancies__item-data-container">
+                <p class="vacancies__item-spec">SOFTWARE DEVELOPMENT</p>
+                <p class="vacancies__item-data">
+                  1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="news__pagination">
+          <a href="#"><p class="news__pagination-item">1</p></a>
+          <a href="#"> <p class="news__pagination-item news__pagination-item--active">2</p></a>
+            <a href="#"> <p class="news__pagination-item">3</p></a>
+              <a href="#"> <p class="news__pagination-item">4</p></a>
+                <a href="#"> <p class="news__pagination-item">...</p></a>
+                  <a href="#"> <p class="news__pagination-item">5</p></a>
+        </div>
+
+
+        
+      </div>
+    </section>
+
+    <section class="vacancies vacancies__bg-bot">
+   
+      <div class="vacancies__container">
+
+
+        <div class="vacancies__join-all">
+       <div class="vacancies__left-part">
+       <h3 class="vacancies__join-title">Join Alliance Networks</h3>
+       <p class="vacancies__subtitle">We are looking for the brightest people who thrive on working on hard problems with an awesome team and want to be part of something special.
+      </p>
+      <p class="vacancies__join-contact">Contact us for Job Opportunities at <span class="vacancies__join-contact--thin">areers@ancoz.com.au</span> c</p>
+    </div>
+    <div class="vacancies__right-part">
+      <h4 class="vacancies__pseude-title">We take our fun time just as seriously as our work. 
+        Benefits and Perks
+        </h4>
+
+        <div class="vacancies__ul">
+          <div class="vacancies__list">Our team traditions include watching movies that are so-bad-that-they’re-good</div>
+          <div class="vacancies__list">Screening sporting events at the office, pickup Nerf basketball</div>
+          <div class="vacancies__list">Beach volleyball parties</div>
+          <div class="vacancies__list">Weekly team lunches and beer bashes</div>
+        </div>
+    </div>
+     </div>
+
+
+
+
+      </div>
+    </section>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
