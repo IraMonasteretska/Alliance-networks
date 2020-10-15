@@ -2404,6 +2404,11 @@ header {
   border-radius: 6px 0 0 6px;
 }
 
+#sonBlockCategory {
+  display: flex;
+  justify-content: start;
+}
+
 .partners__img {
   width: 100%;
   height: 100%;

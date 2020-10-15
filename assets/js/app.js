@@ -59318,6 +59318,34 @@ function createSelect() {
   }
 }
 
+var fatherBlog = document.getElementById('sort-category-blog-father');
+var sonBlockCategory = document.getElementById('sonBlockCategory');
+fatherBlog.addEventListener('click', function (event) {
+  var target = event.target;
+
+  if (target.style.color == 'blue' || target == fatherBlog) {
+    return;
+  }
+
+  var sortTag = document.createElement("p");
+  var sortTagClose = document.createElement("span");
+  target.style.color = 'blue';
+  sortTag.innerHTML = target.innerHTML;
+  sonBlockCategory.appendChild(sortTag);
+  sortTag.classList.add('sort__tags');
+  sortTag.appendChild(sortTagClose);
+  sortTagClose.classList.add('sort__tags-close');
+});
+sonBlockCategory.addEventListener('click', function (event) {
+  var target = event.target;
+
+  if (target == sonBlockCategory || target.classList.contains('sort__tags')) {
+    return;
+  }
+
+  target.parentNode.parentNode.removeChild(target.parentNode);
+});
+
 /***/ }),
 
 /***/ "./src/js/pages.js":
