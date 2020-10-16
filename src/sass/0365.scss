@@ -1,0 +1,190 @@
+.block-0365{
+    margin-top:180px;
+    // max-width:  955px; 
+}
+.btn-ad-0365 button{
+    margin-top: 150px;
+}
+.animation-0365 {
+    margin-top: -80px;
+    img {
+        position: absolute;
+
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+}
+.animation-big{
+    animation-name: big-animation;
+}
+@keyframes big-animation {
+    0% {
+         margin-top: 5px;
+    }
+    100% {
+       margin-top: -20px;
+    }
+}
+
+.animation-side{
+    animation-name: side-animation;
+}
+@keyframes side-animation {
+    0% {
+         margin-top: -3px;
+    }
+    100% {
+       margin-top: -20px;
+    }
+}
+
+.animation-line{
+    animation-name: side-animation;
+}
+ .animation-kvadrat1{
+    animation-name: kv1-animation;
+ }
+ @keyframes kv1-animation {
+    0% {
+         margin-top: 2px;
+    }
+    100% {
+       margin-top: -10px;
+    }
+}
+
+.animation-kvadrat2{
+    animation-name: kv2-animation;
+ }
+ @keyframes kv2-animation {
+    0% {
+         margin-top: 4px;
+    }
+    100% {
+       margin-top: -13px;
+    }
+}
+.animation-kvadrat3{
+    animation-name: kv3-animation;
+ }
+ @keyframes kv3-animation {
+    0% {
+         margin-top: 6px;
+    }
+    100% {
+       margin-top: -15px;
+    }
+}
+.animation-kvadrat4{
+    animation-name: kv4-animation;
+ }
+ @keyframes kv4-animation {
+    0% {
+         margin-top: 8px;
+    }
+    100% {
+       margin-top: -20px;
+    }
+}
+.animation-kvadrat5{
+    animation-name: kv5-animation;
+ }
+ @keyframes kv5-animation {
+    0% {
+         margin-top: 10px;
+    }
+    100% {
+       margin-top: -25px;
+    }
+}
+.text-0365  {
+    P{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 28px;
+    color: #2E2E2E;
+    }
+    strong{
+        font-weight: 600;
+    }
+}
+
+
+
+
+
+@media (max-width: 1750px) {
+    .animation-0365 {
+        margin-top: -90px;
+        position: absolute;
+        right: 0;
+
+        img {
+            width: 800px;
+        }
+    }
+}
+@media (max-width: 1422px) {
+    .animation-0365 {
+        img {
+            width: 700px;
+        }
+    }
+}
+@media (max-width: 1228px) {
+    .animation-0365 {
+        img {
+            max-width: 600px;
+        }
+    }
+    .btn-ad-0365 button{
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .animation-0365 {
+        margin-top: -20px;
+
+        img {
+            max-width: 500px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .animation-0365 {
+        // margin-top: 120px;
+        right: 20px;
+
+        img {
+            max-width: 420px;
+        }
+    }
+}
+@media (max-width: 840px) {
+    .animation-0365 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .animation-0365 {
+      margin-top: 130px;
+      display: block;
+      left: 0;
+    }
+    .btn-ad-0365 button{
+        margin-top: 310px;
+    }
+}
+@media (max-width: 840px) {
+    .animation-0365 {
+        margin-top: 160px;
+    
+        img {
+            max-width: 300px;
+        }
+    }
+}
