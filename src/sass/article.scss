@@ -238,3 +238,24 @@ margin-top: 80vh;
     height: 180px;
   }
 }
+
+
+.article-blog__this-page{
+  transition: all .5s ease;
+  color: #B1CAFF;
+opacity: 0.4;
+&:hover{
+  color: #fff;
+  opacity: 1;
+}
+}
+
+.article__line{
+  margin-top: 14px;
+}
+
+
+.line-sub-article-title-line{
+  margin-bottom: 20px;
+}
+

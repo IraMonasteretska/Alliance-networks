@@ -237,14 +237,20 @@ $(document).ready(function() {
   sortTagClose.classList.add('sort__tags-close');
   });
   
-  
-  
-  
+ 
+ 
+
   sonBlockCategory.addEventListener('click', function(event) {
       let target = event.target;
       if( target == sonBlockCategory || target.classList.contains('sort__tags')){
         return
       }
   target.parentNode.parentNode.removeChild(target.parentNode);
+  var elements = document.querySelector('.sort__tags-block-category-container');
+for (let i = 0; i < elements.childNodes.length; i++) {
+    if (elements.childNodes[i].innerHTML == target.parentNode.innerHTML.replace(/<\/?[^>]+(>|$)/g, "")) {
+       elements.childNodes[i].style.color = 'black'
+    }        
+}
   
   });
