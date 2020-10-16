@@ -239,17 +239,19 @@ opacity: 0.4;
 //  color: #fff;
 //   opacity: 1;
 
-// }
+&:hover{
+ color: #B1CAFf;
+  opacity: 0.4;
+
+}
 }
 
 .banner-nav{
 cursor: pointer;
 }
 
-// .cloud__nav-home{
-//   transition: all .5s ease;
-//   &:hover{
-//     color: #FFF;
-//     opacity: 0.7;
-//   }
-// }
+.cloud__nav-home{
+  &:hover{
+    color: #FFF;
+  }
+}

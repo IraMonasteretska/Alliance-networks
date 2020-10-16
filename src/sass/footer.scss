@@ -10,6 +10,16 @@
 
 }
 
+.footer-bg-black{
+  background: url("../../img/footer-bg-black.png") no-repeat;
+  height: auto;
+  padding-top: 169px;
+  background-size: cover;
+  .burger-menu_nav a{
+    color: #F2F9FF;
+  }
+}
+
 .footer-bg-white .general-text {
     width: auto;
     margin-top: 20px;
