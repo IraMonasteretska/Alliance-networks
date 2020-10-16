@@ -217,8 +217,8 @@ margin-bottom: 35px;
 opacity: 0.4;
 
 &:hover{
- color: #fff;
-  opacity: 1;
+ color: #B1CAFf;
+  opacity: 0.4;
 
 }
 }
@@ -227,10 +227,8 @@ opacity: 0.4;
 cursor: pointer;
 }
 
-// .cloud__nav-home{
-//   transition: all .5s ease;
-//   &:hover{
-//     color: #FFF;
-//     opacity: 0.7;
-//   }
-// }
+.cloud__nav-home{
+  &:hover{
+    color: #FFF;
+  }
+}
