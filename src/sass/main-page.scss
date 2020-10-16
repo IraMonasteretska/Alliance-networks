@@ -24,7 +24,11 @@ header {
     background-color: white;
     transform: translate(-50%, -50%);
 }
-
+.big-ec-svg{
+    margin-left: 257px;
+    margin-top: -94px;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
 .logotip {
     padding-bottom: 30px;
 }
@@ -460,7 +464,6 @@ background: #edf6ff;
         color: #171717;
         padding-top: 100px;
         padding-bottom: 64px;
-
         svg {
             position: absolute;
             z-index: -1;
@@ -1183,6 +1186,12 @@ margin-left: auto;
 
         font-size: 26px;
         line-height: 30px;
+    }
+    .logotip img{
+        width: 200px;
+    }
+    .burger-menu_button{
+        top: 97px;
     }
 }
 @media (max-width: 465px){
