@@ -59318,6 +59318,41 @@ function createSelect() {
   }
 }
 
+var fatherBlog = document.getElementById('sort-category-blog-father');
+var sonBlockCategory = document.getElementById('sonBlockCategory');
+fatherBlog.addEventListener('click', function (event) {
+  var target = event.target;
+
+  if (target.style.color == 'blue' || target == fatherBlog) {
+    return;
+  }
+
+  var sortTag = document.createElement("p");
+  var sortTagClose = document.createElement("span");
+  target.style.color = 'blue';
+  sortTag.innerHTML = target.innerHTML;
+  sonBlockCategory.appendChild(sortTag);
+  sortTag.classList.add('sort__tags');
+  sortTag.appendChild(sortTagClose);
+  sortTagClose.classList.add('sort__tags-close');
+});
+sonBlockCategory.addEventListener('click', function (event) {
+  var target = event.target;
+
+  if (target == sonBlockCategory || target.classList.contains('sort__tags')) {
+    return;
+  }
+
+  target.parentNode.parentNode.removeChild(target.parentNode);
+  var elements = document.querySelector('.sort__tags-block-category-container');
+
+  for (var i = 0; i < elements.childNodes.length; i++) {
+    if (elements.childNodes[i].innerHTML == target.parentNode.innerHTML.replace(/<\/?[^>]+(>|$)/g, "")) {
+      elements.childNodes[i].style.color = 'black';
+    }
+  }
+});
+
 /***/ }),
 
 /***/ "./src/js/pages.js":
@@ -59532,8 +59567,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(".btn-general2").mouseout(function
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\vvn09\Desktop\Alliance-networks\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\vvn09\Desktop\Alliance-networks\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\User\Documents\Alliance-networks\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\User\Documents\Alliance-networks\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })

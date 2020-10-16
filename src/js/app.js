@@ -216,3 +216,41 @@ $(document).ready(function() {
   
 
 
+
+  const fatherBlog = document.getElementById('sort-category-blog-father');
+  let sonBlockCategory = document.getElementById('sonBlockCategory');
+  fatherBlog.addEventListener('click', function(event) {
+  
+      let target = event.target;
+  
+      if(target.style.color == 'blue' || target == fatherBlog){
+        return
+      }
+      let sortTag = document.createElement("p");   
+      let sortTagClose = document.createElement("span");  
+      target.style.color = 'blue'
+  sortTag.innerHTML = target.innerHTML;   
+  
+  sonBlockCategory.appendChild(sortTag);  
+  sortTag.classList.add('sort__tags');
+  sortTag.appendChild(sortTagClose);  
+  sortTagClose.classList.add('sort__tags-close');
+  });
+  
+ 
+ 
+
+  sonBlockCategory.addEventListener('click', function(event) {
+      let target = event.target;
+      if( target == sonBlockCategory || target.classList.contains('sort__tags')){
+        return
+      }
+  target.parentNode.parentNode.removeChild(target.parentNode);
+  var elements = document.querySelector('.sort__tags-block-category-container');
+for (let i = 0; i < elements.childNodes.length; i++) {
+    if (elements.childNodes[i].innerHTML == target.parentNode.innerHTML.replace(/<\/?[^>]+(>|$)/g, "")) {
+       elements.childNodes[i].style.color = 'black'
+    }        
+}
+  
+  });

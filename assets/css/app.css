@@ -1979,7 +1979,7 @@ header {
   margin-left: 35px;
 }
 .could-business__line {
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid white;
   width: 100%;
   margin-top: 30px;
 }
@@ -1990,13 +1990,6 @@ header {
   flex-wrap: wrap;
 }
 
-.cloud-line {
-  background: url(../../img/cloud-design/cloud-line.png);
-  background-position: -50px 0;
-  width: 100%;
-  height: 100%;
-}
-
 .text-two-block {
   margin-top: 20px;
   margin-bottom: 35px;
@@ -2004,6 +1997,19 @@ header {
 
 .cloud-item-container {
   margin-top: 55px;
+}
+
+.cloud__nav {
+  color: #B1CAFF;
+  opacity: 0.4;
+}
+.cloud__nav:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.banner-nav {
+  cursor: pointer;
 }
 
 .our-blog-bg {
@@ -2033,10 +2039,11 @@ header {
   border-left: 1px solid #E0E0E0;
   border-bottom: 1px solid #E0E0E0;
   cursor: pointer;
-  width: 190px;
+  width: 220px;
   text-align: left;
   font-weight: 600;
   font-size: 16px;
+  border-radius: 6px 0px 0px 6px;
 }
 .select-dropdown__button::focus {
   outline: none;
@@ -2122,16 +2129,6 @@ header {
   position: relative;
   margin-left: 5px;
 }
-.sort__tag {
-  width: 53px;
-  height: 46px;
-  border: 1px solid #E0E0E0;
-  box-sizing: border-box;
-  border-radius: 6px 0px 0px 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .sort__tags-block {
   margin-top: 31px;
 }
@@ -2201,7 +2198,7 @@ header {
 .news__item {
   margin-top: 30px;
   width: 32%;
-  height: 486px;
+  height: 500px;
   border: 1px solid #E0E0E0;
   box-sizing: border-box;
   border-radius: 6px;
@@ -2405,10 +2402,6 @@ header {
   justify-content: space-between;
 }
 
-.sort__tags-block.active {
-  display: block;
-}
-
 .sort__by-teg-req.active:after {
   transform: rotate(180deg);
 }
@@ -2427,6 +2420,55 @@ header {
 
 .sbc-first-child {
   border-radius: 6px 0 0 6px;
+}
+
+#sonBlockCategory {
+  display: flex;
+  justify-content: start;
+}
+
+.sort__block {
+  margin-left: 0;
+}
+
+.sort__container-by {
+  margin-left: 0;
+}
+
+.tag-in-container {
+  margin-left: 11px;
+}
+
+.our-news {
+  height: 465px;
+}
+
+.our-news .news__item-title {
+  margin-top: 20px;
+}
+
+.loader-item {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.cube1 {
+  background: #14bbf2;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cube2 {
+  background: #14bbf2;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 20px;
 }
 
 .partners__img {
@@ -2715,6 +2757,24 @@ header {
 }
 .news-item-block-blog .news__item-title {
   height: 180px;
+}
+
+.article-blog__this-page {
+  transition: all 0.5s ease;
+  color: #B1CAFF;
+  opacity: 0.4;
+}
+.article-blog__this-page:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.article__line {
+  margin-top: 14px;
+}
+
+.line-sub-article-title-line {
+  margin-bottom: 20px;
 }
 
 .vacancies__sort__close-search {
@@ -3218,6 +3278,18 @@ header {
   transform: translateZ(-1px);
 }
 
+.naw-white-bg__home {
+  color: #000000;
+}
+.naw-white-bg__home:hover {
+  opacity: 0.9;
+}
+
+.naw-white-bg__page {
+  color: #7582A4;
+  opacity: 0.4;
+}
+
 .resources__container {
   max-width: 1460px;
   margin: 0 auto;
@@ -3354,7 +3426,7 @@ header {
     margin-top: 30px;
   }
 
-  .our-values__item {
+  .ou-values__item {
     max-width: 300px;
   }
 }
@@ -3408,7 +3480,7 @@ header {
     margin-left: 40px;
   }
 
-  .our-values__item {
+  .ou-values__item {
     max-width: 240px;
   }
 
@@ -3556,12 +3628,12 @@ header {
     text-align: center;
   }
 
-  .our-values__flex-container {
+  .ou-values__flex-container {
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
-  .our-values__item {
+  .ou-values__item {
     max-width: 345px;
     margin-top: 40px;
     text-align: center;
@@ -4069,6 +4141,7 @@ header {
     height: 410px;
   }
 }
+<<<<<<< HEAD
 .block-0365 {
   margin-top: 180px;
 }
@@ -4323,6 +4396,11 @@ header {
   }
   .animation-0365 img {
     max-width: 300px;
+=======
+@media (max-width: 350px) {
+  .news__item {
+    width: 100% !important;
+>>>>>>> 49ff75b19c3b0b5ddb2e9f7a8f46b68404e237bf
   }
 }
 .footer-bg-white {

@@ -11,7 +11,7 @@
    
     <div class="banner-bg our-blog-bg">
       <div class="banner-container banner-container-mobile-blog">
-        <nav class="banner-nav"> <a class="banner-nav__home"> Home &nbsp; / &nbsp;</a> <a href="#" class="banner-nav__this-page"> Our Blog</a></nav>
+        <nav class="banner-nav"> <a class="banner-nav__home cloud__nav-home"> Home &nbsp; / &nbsp;</a> <a href="#" class="banner-nav__this-page cloud__nav"> Our Blog</a></nav>
         <h3 class="banner-title">Our Blog</h3>
       </div>
     </div>
@@ -19,37 +19,38 @@
 
     <section class="news">
       <div class="news-container">
-<section class="sort__block">
-  <div class="sort__container-mobile">
-        <h3 class="sort__tags-title">TAGS</h3>
-        <div class="sort__by-teg-req" ></div>
+        <section class="news">
+          <div class="news-container">
+    <section class="sort__block">
+      <div class="sort__container-mobile">
+            <h3 class="sort__tags-title">TAGS</h3>
+            <div class="sort__by-teg-req" ></div>
+          </div>
+    <div class="sort__tags-block" >
+      <div class="sort__tags-block-category-container" id="sort-category-blog-father">
+        <p class="sort__tags-block-category-item">App Development</p>
+        <p class="sort__tags-block-category-item ">Blockchain</p>
+        <p class="sort__tags-block-category-item ">Data Science</p>
+        <p class="sort__tags-block-category-item">Enterprise</p>
+        <p class="sort__tags-block-category-item">Security</p>
+        <p class="sort__tags-block-category-item ">Trends</p>
+        <p class="sort__tags-block-category-item">Finance</p>
       </div>
-<div class="sort__tags-block" >
-  <div class="sort__tags-block-category-container">
-    <p class="sort__tags-block-category-item">App Development</p>
-    <p class="sort__tags-block-category-item sort__tags-block-category-item--active">Blockchain</p>
-    <p class="sort__tags-block-category-item sort__tags-block-category-item--active">Data Science</p>
-    <p class="sort__tags-block-category-item">Enterprise</p>
-    <p class="sort__tags-block-category-item">Security</p>
-    <p class="sort__tags-block-category-item sort__tags-block-category-item--active ">Trends</p>
-    <p class="sort__tags-block-category-item">Finance</p>
-  </div>
-  <div class="sort__tags-container">
-    <button class="sort__tags-clear">Clear All</button>
-    <p class="sort__tags">App Development <span class="sort__tags-close"></span></p>
-    <p class="sort__tags">Trends <span class="sort__tags-close"></span></p>
-    <p class="sort__tags">Blockchain <span class="sort__tags-close"></span></p>
-  </div>
-</div>
-</section>
+      <div class="sort__tags-container">
+        <button class="sort__tags-clear">Clear All</button>
+        <div id="sonBlockCategory">
+        </div>
+      </div>
+    </div>
+    </section>
 
-  <div class="sort">
-  <div class="sort__tag">
+  <div class="sort sort__container-by">
+  <!-- <div class="sort__tag">
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M7.96841 10.9102C8.07404 11.0221 8.13617 11.165 8.13617 11.3203V20L11.864 16.8127V11.3203C11.864 11.165 11.9262 11.0221 12.0318 10.9102L18.3381 4.03851H1.66211L7.96841 10.9102Z" fill="#BDBDBD"/>
       <path d="M19.1337 0H0.867188V2.7959H19.1337V0Z" fill="#BDBDBD"/>
       </svg>
-  </div>
+  </div> -->
   <select id="our-news-search-select" placeholder-text="Sort by">
     <option value="1" class="select-dropdown__list-item"
       >Sort by oldest</option
