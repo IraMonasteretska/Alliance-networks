@@ -4141,7 +4141,11 @@ header {
     height: 410px;
   }
 }
-<<<<<<< HEAD
+@media (max-width: 350px) {
+  .news__item {
+    width: 100% !important;
+  }
+}
 .block-0365 {
   margin-top: 180px;
 }
@@ -4396,11 +4400,6 @@ header {
   }
   .animation-0365 img {
     max-width: 300px;
-=======
-@media (max-width: 350px) {
-  .news__item {
-    width: 100% !important;
->>>>>>> 49ff75b19c3b0b5ddb2e9f7a8f46b68404e237bf
   }
 }
 .footer-bg-white {
