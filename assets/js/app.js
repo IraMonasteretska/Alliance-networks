@@ -59125,6 +59125,8 @@ Object(_animation__WEBPACK_IMPORTED_MODULE_2__["default"])(); // require('../js/
 
 __webpack_require__(/*! ../js/pages.js */ "./src/js/pages.js");
 
+__webpack_require__(/*! ../revealator-master/fm.revealator.jquery.js */ "./src/revealator-master/fm.revealator.jquery.js");
+
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".sort__by-category-position").click(function (event) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".sort__category-ul-position, .sort__by-category-position, .button-test-position").toggleClass("active");
@@ -59481,7 +59483,40 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('main')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burg-dropt').css("transform", "rotate(0deg)");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-arr1').css("fill", "#0A0908");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burger-dropt').css("color", "#0A0908");
+  }]); //black
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burger-dropt-d').toggleClick([function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.dropt-about a').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.footer-elem').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burg-dropt_content').css("display", "inline");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burg-dropt').css("transform", "rotate(180deg)");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burger-dropt-d').css("color", "#64AAFC");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-arr1').css("fill", "#64AAFC");
+  }, function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.dropt-about a').css("display", "inline");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.footer-elem').css("display", "block");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burg-dropt_content').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burg-dropt').css("transform", "rotate(0deg)");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-arr1').css("fill", "#FFFFFF");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burger-dropt-d').css("color", "#FFFFFF");
   }]);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.treeitem').click(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).next('ul.subtree').toggle();
+    });
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#Remove').click(function () {
+    var selectedItem = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#jqxTree').jqxTree('selectedItem');
+
+    if (selectedItem != null) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#jqxTree').jqxTree('removeItem', selectedItem.element, false); // update the tree.
+
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#jqxTree').jqxTree('render');
+    }
+  }); // $('#jqxTree').on('removed', function (event) {
+  //     alert("You removed  item");
+  // });
+
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burger-dropt-about').toggleClick([function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burg-dropt_content2').fadeIn();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burg-dropt2').css("transform", "rotate(180deg)");
@@ -59492,6 +59527,18 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('main')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burg-dropt2').css("transform", "rotate(0deg)");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-arr2').css("fill", "#0A0908");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burger-dropt-about').css("color", "#0A0908");
+  }]); //dark
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burger-dropt-about-d').toggleClick([function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burg-dropt_content2').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burg-dropt2').css("transform", "rotate(180deg)");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burger-dropt-about-d').css("color", "#64AAFC");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-arr2').css("fill", "#64AAFC");
+  }, function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burg-dropt_content2').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burg-dropt2').css("transform", "rotate(0deg)");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-arr2').css("fill", "#FFFFFF");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burger-dropt-about-d').css("color", "#FFFFFF");
   }]);
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.burg-item1').toggleClick([function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.dr1').css("display", "block");
@@ -59603,6 +59650,138 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(".btn-general2").mouseover(functio
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(".btn-general2").mouseout(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".under-btn2").css("margin-top", "-44px");
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".under-btn2").css("right", "0px");
+});
+
+/***/ }),
+
+/***/ "./src/revealator-master/fm.revealator.jquery.js":
+/*!*******************************************************!*\
+  !*** ./src/revealator-master/fm.revealator.jquery.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*
+ Revealator jQuery Plugin
+ Revealator is a jQuery-based plugin for adding effects to elements that enter the window. It's simple, and easy to use.
+ version 1.4, Jan 11th, 2016
+ by Ingi á Steinamørk
+
+ The MIT License (MIT)
+
+ Copyright (c) 2016 Qodio
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+ */
+var Revealator = typeof Revealator !== 'undefined' ? Revealator : {};
+$(function () {
+  Revealator = $.extend({}, {
+    timer: null,
+    busy: false,
+    scroll_padding: 0,
+    effects_padding: 0,
+    refresh: function refresh() {}
+  }, typeof Revealator !== 'undefined' ? Revealator : {});
+
+  Revealator.refresh = function () {
+    var $window = $(window);
+    var $document = $(document);
+    var $body = $(document.body);
+    var i = 0;
+    var window_top = Revealator.effects_padding;
+    var window_bottom = $window.height() - Revealator.effects_padding;
+    var document_top = Revealator.scroll_padding;
+    var document_bottom = $document.height() - Revealator.scroll_padding;
+
+    if ($window.scrollTop() === 0) {
+      if (!$body.hasClass('at-top')) {
+        $body.addClass('at-top').removeClass('at-bottom').removeClass('near-top').removeClass('near-bottom');
+      }
+    } else if ($window.scrollTop() + $window.height() === $document.height()) {
+      if (!$body.hasClass('at-bottom')) {
+        $body.addClass('at-bottom').removeClass('at-top').removeClass('near-top').removeClass('near-bottom');
+      }
+    } else if ($window.scrollTop() <= document_top) {
+      if (!$body.hasClass('near-top')) {
+        $body.addClass('near-top').removeClass('near-bottom').removeClass('at-top').removeClass('at-bottom');
+      }
+    } else if ($window.scrollTop() + $window.height() >= document_bottom) {
+      if (!$body.hasClass('near-bottom')) {
+        $body.addClass('near-bottom').removeClass('near-top').removeClass('at-top').removeClass('at-bottom');
+      }
+    } else {
+      if ($body.hasClass('at-top') || $body.hasClass('at-bottom') || $body.hasClass('near-top') || $body.hasClass('near-bottom')) {
+        $body.removeClass('at-top').removeClass('at-bottom').removeClass('near-top').removeClass('near-bottom');
+      }
+    }
+
+    $('*[class*="revealator"]').each(function () {
+      i++;
+      var element = this;
+      var $element = $(element);
+      var element_bounding = element.getBoundingClientRect();
+      var position_class = undefined;
+
+      if (element_bounding.top > window_bottom && element_bounding.bottom > window_bottom) {
+        position_class = 'revealator-below';
+      } else if (element_bounding.top < window_bottom && element_bounding.bottom > window_bottom) {
+        position_class = 'revealator-partially-below';
+      } else if (element_bounding.top < window_top && element_bounding.bottom > window_top) {
+        position_class = 'revealator-partially-above';
+      } else if (element_bounding.top < window_top && element_bounding.bottom < window_top) {
+        position_class = 'revealator-above';
+      } else {
+        position_class = 'revealator-within';
+      }
+
+      if ($element.hasClass('revealator-load') && !$element.hasClass('revealator-within')) {
+        $element.removeClass('revealator-below revealator-partially-below revealator-within revealator-partially-above revealator-above');
+        $element.addClass('revealator-within');
+      }
+
+      if (!$element.hasClass(position_class) && !$element.hasClass('revealator-load')) {
+        if ($element.hasClass('revealator-once')) {
+          if (!$element.hasClass('revealator-within')) {
+            $element.removeClass('revealator-below revealator-partially-below revealator-within revealator-partially-above revealator-above');
+            $element.addClass(position_class);
+          }
+
+          if ($element.hasClass('revealator-partially-above') || $element.hasClass('revealator-above')) {
+            $element.addClass('revealator-within');
+          }
+        } else {
+          $element.removeClass('revealator-below revealator-partially-below revealator-within revealator-partially-above revealator-above');
+          $element.addClass(position_class);
+        }
+      }
+    });
+  };
+
+  $(window).bind('scroll resize load ready', function () {
+    if (!Revealator.busy) {
+      Revealator.busy = true;
+      setTimeout(function () {
+        Revealator.busy = false;
+        Revealator.refresh();
+      }, 150);
+    }
+  });
 });
 
 /***/ }),
