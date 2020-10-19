@@ -27,7 +27,7 @@ function burgerMenu(selector) {
 }
 burgerMenu('.burger-menu');
 //
-if ($('*').is('.main-page')) {
+if ($('*').is('main')) {
 
     $.fn.toggleClick = function (funcArray) {
         return this.click(function () {

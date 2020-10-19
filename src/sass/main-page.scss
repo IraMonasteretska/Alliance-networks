@@ -15,12 +15,18 @@
 .cont-main-p{
     width: 100%;
 }
+.head-block{
+    padding-top: 110px;
+}
+.head-block2{
+    padding-top: 0px;
+}
 header {
     position: fixed;
     z-index: 9;
     left: 50%;
     width: 100%;
-    padding-top: 110px;
+
     background-color: white;
     transform: translate(-50%, -50%);
 }
@@ -1035,7 +1041,7 @@ margin-left: auto;
         padding-top: 66px;
         // padding-bottom: 60px;
     background-image: url(../../img/bg-section3.png);
-    border-radius: 10px;
+    // border-radius: 10px;
     background-repeat: no-repeat;
     background-position: left;
   padding-left: 30px;;
@@ -1064,13 +1070,24 @@ margin-left: auto;
             width: 190px;
         }
     }
-
-    header {
-
+  
+   
+    .head-block{
         padding-top: 90px;
-
     }
-
+    
+    .head-block2{
+        padding-top: 20px;
+        .burger-menu_button {
+            top: 29px;
+        }
+        .burger-menu_nav{
+            top: 98px;
+        }
+    }
+    #header-a{
+        top: 36px;
+    }
     .burger-menu_nav {
 
         top: 172px;

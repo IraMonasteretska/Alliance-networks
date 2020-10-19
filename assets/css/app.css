@@ -24,12 +24,19 @@
   width: 100%;
 }
 
+.head-block {
+  padding-top: 110px;
+}
+
+.head-block2 {
+  padding-top: 0px;
+}
+
 header {
   position: fixed;
   z-index: 9;
   left: 50%;
   width: 100%;
-  padding-top: 110px;
   background-color: white;
   transform: translate(-50%, -50%);
 }
@@ -1058,7 +1065,6 @@ header {
     margin-top: 30px;
     padding-top: 66px;
     background-image: url(../../img/bg-section3.png);
-    border-radius: 10px;
     background-repeat: no-repeat;
     background-position: left;
     padding-left: 30px;
@@ -1088,8 +1094,22 @@ header {
     width: 190px;
   }
 
-  header {
+  .head-block {
     padding-top: 90px;
+  }
+
+  .head-block2 {
+    padding-top: 20px;
+  }
+  .head-block2 .burger-menu_button {
+    top: 29px;
+  }
+  .head-block2 .burger-menu_nav {
+    top: 98px;
+  }
+
+  #header-a {
+    top: 36px;
   }
 
   .burger-menu_nav {
@@ -1845,6 +1865,9 @@ header {
   margin-left: -17px;
 }
 
+.could-business a:hover {
+  color: #FFFFFF;
+}
 .could-business__container {
   max-width: 950px;
   margin: 0 auto;
@@ -1967,6 +1990,10 @@ header {
   text-align: center;
   color: #FFFFFF;
   position: relative;
+  transition: 0.4s ease;
+}
+.could-business__table-button:hover {
+  background: #64AAFC;
 }
 .could-business__table-button:after {
   position: absolute;
@@ -1977,6 +2004,16 @@ header {
   border-radius: 6px;
   margin-top: 30px;
   margin-left: 35px;
+  transition: 0.4s ease;
+}
+.could-business__table-button:hover:after {
+  position: absolute;
+  content: "";
+  background: rgba(110, 222, 211, 0.12);
+  border-radius: 6px;
+  margin-top: 0px;
+  margin-left: 0px;
+  color: #FFFFFF;
 }
 .could-business__line {
   border-bottom: 1px solid white;
@@ -2003,10 +2040,13 @@ header {
   color: #B1CAFF;
   opacity: 0.4;
 }
+<<<<<<< HEAD
+=======
 .cloud__nav:hover {
   color: #B1CAFf;
   opacity: 0.4;
 }
+>>>>>>> c3b48be2232510612c728a1429cb69b40427d704
 
 .banner-nav {
   cursor: pointer;

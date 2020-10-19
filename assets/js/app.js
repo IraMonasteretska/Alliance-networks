@@ -59542,7 +59542,7 @@ function burgerMenu(selector) {
 
 burgerMenu('.burger-menu'); //
 
-if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-page')) {
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('main')) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default.a.fn.toggleClick = function (funcArray) {
     return this.click(function () {
       var elem = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this);
