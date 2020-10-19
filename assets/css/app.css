@@ -24,7 +24,7 @@
 
 .svg-e {
   position: absolute;
-  right: -70px;
+  right: 40px;
   margin-top: 950px;
 }
 
@@ -3405,7 +3405,6 @@ header {
   color: #2667FF;
 }
 .vacancies-single__form-btn {
-  z-index: 10000;
   width: 216px;
   height: 56px;
   background: #FF558D;
@@ -3420,7 +3419,6 @@ header {
   margin-top: 40px;
   margin-right: 0;
   margin-left: auto;
-  z-index: 10000;
   transform-style: preserve-3d;
 }
 .vacancies-single__form-btn::after {
@@ -3469,6 +3467,10 @@ header {
 
 .banner-bg-blog-article {
   margin-top: 50px;
+}
+
+.vacancies__bg-bot {
+  margin-bottom: -171px;
 }
 
 .resources__container {

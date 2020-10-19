@@ -26,7 +26,7 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-
+if ($('*').is('.main-page')) {
 
 var Revealator = typeof Revealator !== 'undefined' ? Revealator : {};
 
@@ -122,3 +122,4 @@ $(function () {
 		}
 	});
 });
+}
