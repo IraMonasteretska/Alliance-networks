@@ -2,47 +2,23 @@ export function blogSelect() {
   const filterOption = document.querySelector("#sort-category-blog-father");
   const selectedOptions = document.querySelector("#sonBlockCategory");
 
-  // filterOption.addEventListener("click", function(event) {
-  //   let target = event.target;
+  filterOption.addEventListener("click", function(event) {
+    let target = event.target;
 
-  //   if (target.style.color === "blue" || target == filterOption) {
-  //     return;
-  //   }
+    if (target.style.color === "blue" || target == filterOption) {
+      return;
+    }
 
-  //   let sortTag = document.createElement("p");
-  //   let sortTagClose = document.createElement("span");
+    let sortTag = document.createElement("p");
+    let sortTagClose = document.createElement("span");
 
-  //   target.style.color = "blue";
-  //   sortTag.innerHTML = target.innerHTML;
+    target.style.color = "blue";
+    sortTag.innerHTML = target.innerHTML;
 
-  //   selectedOptions.appendChild(sortTag);
-  //   sortTag.classList.add("sort__tags");
-  //   sortTag.appendChild(sortTagClose);
-  //   sortTagClose.classList.add("sort__tags-close");
-  // });
-
-  const filterOptions = filterOption.querySelectorAll(".js-item");
-  filterOptions.forEach((item) => {
-    item.addEventListener("click", () => {
-      if (item.classList.contains("active")) {
-        return;
-      }
-
-      item.classList.add("active");
-
-      let sortTag = document.createElement("p");
-      let sortTagClose = document.createElement("span");
-      
-      sortTag.classList.add("sort__tags");
-      sortTagClose.classList.add("sort__tags-close");
-
-      //add clase
-      item.style.color = "blue";
-      sortTag.textContent = item.textContent;
-
-      sortTag.appendChild(sortTagClose);
-      selectedOptions.appendChild(sortTag);
-    });
+    selectedOptions.appendChild(sortTag);
+    sortTag.classList.add("sort__tags");
+    sortTag.appendChild(sortTagClose);
+    sortTagClose.classList.add("sort__tags-close");
   });
 
   selectedOptions.addEventListener("click", function(event) {
@@ -66,4 +42,15 @@ export function blogSelect() {
       }
     }
   });
+
+  const sortTagClear = document.querySelector("#sortTagClear");
+  sortTagClear.addEventListener("click", function() {
+    const selectedOptions = document.querySelector("#sonBlockCategory");
+   selectedOptions.textContent = ''
+   const elements = filterOption.querySelectorAll(".sort__tags-block-category-item");
+      for (let i = 0; i < elements.length; i++) {
+          elements[i].style.color = "black";
+      }
+  });
+
 }

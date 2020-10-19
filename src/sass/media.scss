@@ -42,6 +42,13 @@ font-size: 18px;
 }
 
 @media (max-width: 1180px) {
+
+.o365-page__left-part .o365-page__left-title {
+  font-size: 40px ;
+
+}
+
+
   .vacancies {
     &__sort__close-search {
       left: -80px;
@@ -68,8 +75,6 @@ font-size: 18px;
 }
 
 @media (max-width: 1100px) {
-
- 
      .resources__items {
     width: 90%;
     margin: 0 auto;
@@ -78,14 +83,20 @@ font-size: 18px;
       width: 40%;
     }
 
-
-  
   .news__item-title {
     font-size: 21px;
   }
+
+
+
 }
 
 @media (max-width: 1050px) {
+
+  
+ .o365-page__form-flex .o365-page__input-select{
+    width: 57%;
+  }
   .animation-about {
     margin-top: -40px;
     right: -50px;
@@ -131,6 +142,11 @@ font-size: 18px;
 }
 
 @media (max-width: 950px) {
+
+  .o365-page__form-flex .o365-page__input-select{
+    width: 50%;
+  }
+
   .sort__by-category {
     width: 110px;
     &::after {
@@ -243,7 +259,56 @@ font-size: 18px;
 }
 
 @media (max-width: 848px) {
+  .o365-page .o365-page__flex-container-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    }
+  
+    .o365-page .o365-page__form{
+      width: 100% ;
+      text-align: center 
+    }
+   
+   .o365-page .o365-page__input{
+        text-align: center ;
+        width: 80% ;
+        padding: 0;
+      }
     
+   .o365-page .o365-page__form-flex{
+     width: 80%;
+     margin: 0 auto;
+   }
+ 
+   .o365-page__form-flex .o365-page__input-select{
+    width: 60%;
+  }
+
+  .o365-page .o365-page__left-title {
+font-size: 50px;
+margin-top:10px;
+padding-right: 0px; 
+  }
+
+  .o365-page .o365-page__text--blue {
+  margin-top: -130px;
+  }
+
+  .o365-page .o365-page__left-text {
+ 
+font-size: 15px;
+color: #1E1E1E;
+margin-top: 45px;
+margin-bottom: -30px;
+  }
+
+  .o365-page .o365-page__flex-btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
   .resources__title{
 font-size: 37px;
@@ -347,17 +412,38 @@ font-size: 37px;
 }
   .resources__item {
     width: 220px;
+    min-height: 100px;
+    height: auto;
+    margin-top: 70px;
   }
+
 .vacancies-single__main-title{
   font-size: 40px;
   margin-bottom: 0;
   line-height: 42px;
 }
 
+.o365-page__form-flex .o365-page__input-select{
+  width: 56%;
+}
 
 }
 
 @media (max-width: 690px) {
+
+
+
+  .o365-page .o365-page__input{
+    width: 100% ;
+  }
+
+.o365-page .o365-page__form-flex{
+ width: 100%;
+}
+
+  .o365-page__form-flex .o365-page__input-select{
+    width: 59%;
+  }
   .article {
     &__flex-container {
       margin-top: 50px;
@@ -437,6 +523,83 @@ font-size: 37px;
 }
 
 @media (max-width: 600px) {
+.o365-page{
+  .o365-page__pseudo-title {
+    margin: 0;
+    font-size: 17px;
+text-align: center;
+  }
+  .o365-page__flex-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .o365-page__items {
+    margin-top: 140px;
+  }
+  .o365-page__item-text {
+font-size: 15px;
+margin-left: 0px;
+  }
+
+  .o365-page__item-title {
+font-size: 22px;
+margin-left: 0px;
+  }
+
+  .o365-page__first-item, .o365-page__two-item{
+    &:after{
+      content: '';
+      width: 50%;
+      height: 50%;
+      background-size: contain;
+      top: -90px;
+    } 
+  }
+
+  .o365-page__first-item{
+    &:after{
+      content: '';
+      top: -105px;
+
+    } 
+  }
+  .o365-page__big-title{
+font-size: 26px;
+text-align: center;
+  }
+  .o365-page__form-flex .o365-page__input-select{
+    width: 100%;
+  }
+
+ .o365-page__form-flex{
+  flex-direction: column;
+}
+
+.container__select-o365{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.o365-page__form-flex  .select-dropdown {
+  &__button {
+    margin-left: 0;
+    text-align: center;
+width: 100%;
+  }
+
+  &__list {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+.o365-page__left-title{
+  font-size: 40px;
+}
+}
+
   .animation-about {
     margin-left: -105px;
   }
@@ -599,6 +762,7 @@ font-size: 37px;
   margin-top: 20px;
   width: 100%;
 }
+
 
 }
 
