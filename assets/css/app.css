@@ -3038,6 +3038,10 @@ header {
   transform: scale(0);
 }
 
+.banner-nav-blog-new {
+  margin-left: -13px;
+}
+
 .partners__img {
   width: 100%;
   height: 100%;
@@ -3413,6 +3417,15 @@ header {
   width: 32.5%;
   margin-top: 20px;
 }
+.vacancies__item:hover {
+  cursor: pointer;
+}
+.vacancies__item:hover .vacancies__item-title {
+  color: #2667FF;
+}
+.vacancies__item:hover .vacancies__item-spec, .vacancies__item:hover .vacancies__item-data {
+  color: #FF558D;
+}
 .vacancies__item-container {
   width: 90%;
   margin: 0 auto;
@@ -3427,9 +3440,6 @@ header {
   margin-top: 40px;
   transition: all 0.5s ease-out;
 }
-.vacancies__item-title:hover {
-  color: #2667FF;
-}
 .vacancies__item-line {
   border-top: 1px solid #E0E0E0;
   width: 100%;
@@ -3441,6 +3451,7 @@ header {
   margin-top: 10px;
 }
 .vacancies__item-spec, .vacancies__item-data {
+  transition: all 0.5s ease-out;
   color: #4F4F4F;
   font-size: 14px;
 }
@@ -4380,6 +4391,7 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: -120px;
   }
 
   .resources__item {
@@ -4700,6 +4712,15 @@ header {
   }
 }
 @media (max-width: 480px) {
+  .banner-nav__this-blog {
+    opacity: 1;
+    color: white;
+  }
+
+  .tag-in-container {
+    margin-left: 5px;
+  }
+
   .sort__category-ul, .button-test {
     width: 90.5%;
   }
@@ -4850,10 +4871,6 @@ header {
     font-size: 20px;
     line-height: 28px;
     padding-right: 20px;
-  }
-
-  .banner-nav {
-    margin-left: -20px;
   }
 }
 @media (max-width: 480px) and (max-width: 380px) {
@@ -5988,7 +6005,7 @@ header {
     padding-left: 20px;
   }
   .footer-logo .general-text button {
-    margin-top: 13px;
+    margin-top: 30px;
   }
 
   .footer-menu {

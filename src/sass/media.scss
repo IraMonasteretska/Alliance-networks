@@ -414,6 +414,7 @@ font-size: 37px;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: -120px;
 }
   .resources__item {
     width: 220px;
@@ -773,7 +774,14 @@ width: 100%;
 
 @media (max-width: 480px) {
 
+  .banner-nav__this-blog{
+opacity: 1;
+color: white;
+  }
 
+  .tag-in-container{
+    margin-left: 5px;
+  }
 
   .sort__category-ul,  .button-test {
     width: 90.5%;
@@ -929,10 +937,10 @@ width: 100%;
       padding-right: 20px;
     }
   }
-  .banner-nav {
-    margin-left: -20px;
-  }
-
+  // .banner-nav {
+  //   margin-left: -20px;
+  // }
+  
   @media (max-width: 380px) {
 
    

@@ -348,5 +348,10 @@ sortTagClearVac.addEventListener("click", function() {
     inputForUrlVac.value = ''
 });
 
+const selectedOptionsVacancies = document.querySelector("#selectedOptionsVac");
+console.log(selectedOptionsVacancies)
+console.log(sortTagClearVac)
 
-
+if (selectedOptionsVacancies == ''){
+  sortTagClearVac.style.display = 'none'
+}

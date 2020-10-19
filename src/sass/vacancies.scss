@@ -55,6 +55,16 @@ border-radius: 6px;
 height: 190px;
 width: 32.5%;
 margin-top: 20px;
+
+&:hover{
+  cursor: pointer;
+  .vacancies__item-title {
+  color: #2667FF;
+}
+.vacancies__item-spec, .vacancies__item-data{
+  color: #FF558D;
+}
+}
   }
 
   &__item-container {
@@ -71,10 +81,6 @@ line-height: 32px;
 color: #000000;
 margin-top:40px;
 transition: all 0.5s ease-out;
-
-&:hover{
-  color: #2667FF;
-}
   }
 
   &__item-line {
@@ -90,6 +96,7 @@ transition: all 0.5s ease-out;
   }
 
   &__item-spec, &__item-data {
+    transition: all 0.5s ease-out;
     color: #4F4F4F;
     font-size: 14px;
   }
