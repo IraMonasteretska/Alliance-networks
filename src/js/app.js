@@ -1,13 +1,15 @@
 import $ from "jquery";
 import "../bootstrap/js/bootstrap.min.js";
-
+import AOS from 'aos';
 import createAnimation from "./animation";
 import { blogSelect } from './blogSelect.js';
+AOS.init();
 createAnimation();
 
 // require('../js/animation.js');
 require("../js/pages.js");
-// require("../revealator-master/fm.revealator.jquery.js"); 
+ 
+AOS.init();
 $(document).ready(function() {
   $(".sort__by-category-position").click(function(event) {
     $(
@@ -248,105 +250,105 @@ window.onload = function() {
 };
 
 // Blog select
-if(document.querySelector('#sort-category-blog-father')){
-  blogSelect();
-}
+// if(document.querySelector('#sort-category-blog-father')){
+//   blogSelect();
+// }
 
-let inputForUrlVac = document.getElementById('inputForUrlVac')
-
-
-
-const levelOption = document.querySelector("#levelOption");
-const tagOption = document.querySelector("#tagOption");
-const positionOption = document.querySelector("#positionOption");
-const selectedOptionsVac = document.querySelector("#selectedOptionsVac");
-positionOption.addEventListener("click", getOption)
-tagOption.addEventListener("click", getOption)
-levelOption.addEventListener("click", getOption)
-
-function getOption(event){
-  let target = event.target;
-  if (target.checked) {
-    let sortTag = document.createElement("p");
-    let sortTagClose = document.createElement("span");
-    sortTag.innerHTML = target.parentNode.textContent;
-    inputForUrlVac.value += target.parentNode.textContent.replace(/\s/g,'')+',', '';
-    selectedOptionsVac.appendChild(sortTag);
-    sortTag.classList.add("sort__tags");
-    sortTag.appendChild(sortTagClose);
-    sortTagClose.classList.add("sort__tags-close");
-  } else if (target.checked == false) {
-    for (let i = 0; i < selectedOptionsVac.childNodes.length; i++) {
-      if (selectedOptionsVac.childNodes[i].textContent == target.parentNode.textContent) {
-        selectedOptionsVac.childNodes[i].parentNode.removeChild(selectedOptionsVac.childNodes[i])
-      }
-    }
-    inputForUrlVac.value = inputForUrlVac.value.replace(target.parentNode.textContent.replace(/\s/g,'')+',', '');
-  }
-  console.log(inputForUrlVac.value);
-}
+// let inputForUrlVac = document.getElementById('inputForUrlVac')
 
 
-const tagSortBtn = document.querySelector("#tagSortBtn");
-tagSortBtn.addEventListener("click", () => getAllSelect('.sort__category-checkbox-tag') )
-const levelSortBtn = document.querySelector("#levelSortBtn");
-levelSortBtn.addEventListener("click", () => getAllSelect('.sort__category-checkbox-lev') )
-const positionSortBtn = document.querySelector("#positionSortBtn");
-positionSortBtn.addEventListener("click", () => getAllSelect('.sort__category-checkbox-pos') )
 
-function getAllSelect(sortClasCat){
-  const sortCategoryCheckbox = document.querySelectorAll(sortClasCat);
-  for (let i = 0; i < sortCategoryCheckbox.length; i++) {
-    sortCategoryCheckbox[i].checked = true
-        inputForUrlVac.value += sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g,'')+',', ''
-        console.log(sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g,'')+',', '');
-        // if(  inputForUrlVac.value = sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g,'')+',', ''){
+// const levelOption = document.querySelector("#levelOption");
+// const tagOption = document.querySelector("#tagOption");
+// const positionOption = document.querySelector("#positionOption");
+// const selectedOptionsVac = document.querySelector("#selectedOptionsVac");
+// positionOption.addEventListener("click", getOption)
+// tagOption.addEventListener("click", getOption)
+// levelOption.addEventListener("click", getOption)
 
-        // }
-    for (let j = 1; j < selectedOptionsVac.childNodes.length; j++) {
-      if (selectedOptionsVac.childNodes[j].textContent == sortCategoryCheckbox[i].parentNode.textContent) {
-        selectedOptionsVac.childNodes[j].parentNode.removeChild(selectedOptionsVac.childNodes[j])
-      }
-    }
-    let sortTag = document.createElement("p");
-    let sortTagClose = document.createElement("span");
-    sortTag.innerHTML = sortCategoryCheckbox[i].parentNode.textContent;
-    selectedOptionsVac.appendChild(sortTag);
-    sortTag.classList.add("sort__tags");
-    sortTag.appendChild(sortTagClose);
-    sortTagClose.classList.add("sort__tags-close");
+// function getOption(event){
+//   let target = event.target;
+//   if (target.checked) {
+//     let sortTag = document.createElement("p");
+//     let sortTagClose = document.createElement("span");
+//     sortTag.innerHTML = target.parentNode.textContent;
+//     inputForUrlVac.value += target.parentNode.textContent.replace(/\s/g,'')+',', '';
+//     selectedOptionsVac.appendChild(sortTag);
+//     sortTag.classList.add("sort__tags");
+//     sortTag.appendChild(sortTagClose);
+//     sortTagClose.classList.add("sort__tags-close");
+//   } else if (target.checked == false) {
+//     for (let i = 0; i < selectedOptionsVac.childNodes.length; i++) {
+//       if (selectedOptionsVac.childNodes[i].textContent == target.parentNode.textContent) {
+//         selectedOptionsVac.childNodes[i].parentNode.removeChild(selectedOptionsVac.childNodes[i])
+//       }
+//     }
+//     inputForUrlVac.value = inputForUrlVac.value.replace(target.parentNode.textContent.replace(/\s/g,'')+',', '');
+//   }
+//   console.log(inputForUrlVac.value);
+// }
+
+
+// const tagSortBtn = document.querySelector("#tagSortBtn");
+// tagSortBtn.addEventListener("click", () => getAllSelect('.sort__category-checkbox-tag') )
+// const levelSortBtn = document.querySelector("#levelSortBtn");
+// levelSortBtn.addEventListener("click", () => getAllSelect('.sort__category-checkbox-lev') )
+// const positionSortBtn = document.querySelector("#positionSortBtn");
+// positionSortBtn.addEventListener("click", () => getAllSelect('.sort__category-checkbox-pos') )
+
+// function getAllSelect(sortClasCat){
+//   const sortCategoryCheckbox = document.querySelectorAll(sortClasCat);
+//   for (let i = 0; i < sortCategoryCheckbox.length; i++) {
+//     sortCategoryCheckbox[i].checked = true
+//         inputForUrlVac.value += sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g,'')+',', ''
+//         console.log(sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g,'')+',', '');
+//         // if(  inputForUrlVac.value = sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g,'')+',', ''){
+
+//         // }
+//     for (let j = 1; j < selectedOptionsVac.childNodes.length; j++) {
+//       if (selectedOptionsVac.childNodes[j].textContent == sortCategoryCheckbox[i].parentNode.textContent) {
+//         selectedOptionsVac.childNodes[j].parentNode.removeChild(selectedOptionsVac.childNodes[j])
+//       }
+//     }
+//     let sortTag = document.createElement("p");
+//     let sortTagClose = document.createElement("span");
+//     sortTag.innerHTML = sortCategoryCheckbox[i].parentNode.textContent;
+//     selectedOptionsVac.appendChild(sortTag);
+//     sortTag.classList.add("sort__tags");
+//     sortTag.appendChild(sortTagClose);
+//     sortTagClose.classList.add("sort__tags-close");
    
-  }
-}
+//   }
+// }
 
-selectedOptionsVac.addEventListener("click", function(event) {
-  let target = event.target;
-  if (target == selectedOptionsVac || target.classList.contains("sort__tags")) {
-    return;
-  }
-  target.parentNode.parentNode.removeChild(target.parentNode);
-  inputForUrlVac.value = inputForUrlVac.value.replace(target.parentNode.textContent.replace(/\s/g,'')+',', '');
-  const sortCategory = document.querySelectorAll(".sort__category");
-  for (let i = 0; i < sortCategory.length; i++) {
-    if (
-      sortCategory[i].textContent ==
-      target.parentNode.textContent
-    ) {
-     sortCategory[i].childNodes[0].childNodes[1].checked = false
-    }
-  }
-});
+// selectedOptionsVac.addEventListener("click", function(event) {
+//   let target = event.target;
+//   if (target == selectedOptionsVac || target.classList.contains("sort__tags")) {
+//     return;
+//   }
+//   target.parentNode.parentNode.removeChild(target.parentNode);
+//   inputForUrlVac.value = inputForUrlVac.value.replace(target.parentNode.textContent.replace(/\s/g,'')+',', '');
+//   const sortCategory = document.querySelectorAll(".sort__category");
+//   for (let i = 0; i < sortCategory.length; i++) {
+//     if (
+//       sortCategory[i].textContent ==
+//       target.parentNode.textContent
+//     ) {
+//      sortCategory[i].childNodes[0].childNodes[1].checked = false
+//     }
+//   }
+// });
 
-const sortTagClearVac = document.querySelector("#sortTagClearVac");
-sortTagClearVac.addEventListener("click", function() {
-  const selectedOptions = document.querySelector("#selectedOptionsVac");
- selectedOptions.textContent = ''
- const sortCategory = document.querySelectorAll(".sort__category");
-    for (let i = 0; i < sortCategory.length; i++) {
-      sortCategory[i].childNodes[0].childNodes[1].checked = false
-    }
-    inputForUrlVac.value = ''
-});
+// const sortTagClearVac = document.querySelector("#sortTagClearVac");
+// sortTagClearVac.addEventListener("click", function() {
+//   const selectedOptions = document.querySelector("#selectedOptionsVac");
+//  selectedOptions.textContent = ''
+//  const sortCategory = document.querySelectorAll(".sort__category");
+//     for (let i = 0; i < sortCategory.length; i++) {
+//       sortCategory[i].childNodes[0].childNodes[1].checked = false
+//     }
+//     inputForUrlVac.value = ''
+// });
 
 
 
