@@ -597,3 +597,22 @@ transform: translateZ(-1px);
   justify-content: start;
   flex-wrap: wrap;
 }
+
+
+.sort__category{
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.vacancies__container, .resources, .partners {
+  margin-top: 30px;
+}
+
+.vacancies-single{
+  margin-top: 150px;
+}
+
+.banner-bg-blog-article{
+margin-top: 50px;
+}

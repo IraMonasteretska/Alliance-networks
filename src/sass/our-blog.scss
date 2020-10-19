@@ -574,3 +574,9 @@
     -webkit-transform: rotate(-360deg);
   }
 }
+
+#inputForUrlBlog, #inputForUrlVac{
+  position: absolute;
+  overflow: hidden;
+  transform: scale(0);
+}

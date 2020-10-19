@@ -7,7 +7,7 @@ createAnimation();
 
 // require('../js/animation.js');
 require("../js/pages.js");
-
+// require("../revealator-master/fm.revealator.jquery.js"); 
 $(document).ready(function() {
   $(".sort__by-category-position").click(function(event) {
     $(
@@ -252,7 +252,7 @@ if(document.querySelector('#sort-category-blog-father')){
   blogSelect();
 }
 
-
+let inputForUrlVac = document.getElementById('inputForUrlVac')
 
 
 
@@ -270,6 +270,7 @@ function getOption(event){
     let sortTag = document.createElement("p");
     let sortTagClose = document.createElement("span");
     sortTag.innerHTML = target.parentNode.textContent;
+    inputForUrlVac.value += target.parentNode.textContent.replace(/\s/g,'')+',', '';
     selectedOptionsVac.appendChild(sortTag);
     sortTag.classList.add("sort__tags");
     sortTag.appendChild(sortTagClose);
@@ -280,7 +281,9 @@ function getOption(event){
         selectedOptionsVac.childNodes[i].parentNode.removeChild(selectedOptionsVac.childNodes[i])
       }
     }
+    inputForUrlVac.value = inputForUrlVac.value.replace(target.parentNode.textContent.replace(/\s/g,'')+',', '');
   }
+  console.log(inputForUrlVac.value);
 }
 
 
@@ -295,6 +298,11 @@ function getAllSelect(sortClasCat){
   const sortCategoryCheckbox = document.querySelectorAll(sortClasCat);
   for (let i = 0; i < sortCategoryCheckbox.length; i++) {
     sortCategoryCheckbox[i].checked = true
+        inputForUrlVac.value += sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g,'')+',', ''
+        console.log(sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g,'')+',', '');
+        // if(  inputForUrlVac.value = sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g,'')+',', ''){
+
+        // }
     for (let j = 1; j < selectedOptionsVac.childNodes.length; j++) {
       if (selectedOptionsVac.childNodes[j].textContent == sortCategoryCheckbox[i].parentNode.textContent) {
         selectedOptionsVac.childNodes[j].parentNode.removeChild(selectedOptionsVac.childNodes[j])
@@ -317,6 +325,7 @@ selectedOptionsVac.addEventListener("click", function(event) {
     return;
   }
   target.parentNode.parentNode.removeChild(target.parentNode);
+  inputForUrlVac.value = inputForUrlVac.value.replace(target.parentNode.textContent.replace(/\s/g,'')+',', '');
   const sortCategory = document.querySelectorAll(".sort__category");
   for (let i = 0; i < sortCategory.length; i++) {
     if (
@@ -336,10 +345,8 @@ sortTagClearVac.addEventListener("click", function() {
     for (let i = 0; i < sortCategory.length; i++) {
       sortCategory[i].childNodes[0].childNodes[1].checked = false
     }
+    inputForUrlVac.value = ''
 });
 
 
 
-// $ git add .
-// $ git commit -m'apdate alex'
-// $ git push
