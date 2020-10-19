@@ -1,13 +1,15 @@
 import $ from "jquery";
 import "../bootstrap/js/bootstrap.min.js";
-
+import AOS from 'aos';
 import createAnimation from "./animation";
 import { blogSelect } from './blogSelect.js';
+AOS.init();
 createAnimation();
 
 // require('../js/animation.js');
 require("../js/pages.js");
-// require("../revealator-master/fm.revealator.jquery.js"); 
+ 
+AOS.init();
 $(document).ready(function() {
   $(".sort__by-category-position").click(function(event) {
     $(
