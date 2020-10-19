@@ -2072,6 +2072,10 @@ header {
   color: #B1CAFF;
   opacity: 0.4;
 }
+.cloud__nav:hover {
+  color: #B1CAFF;
+  opacity: 0.4;
+}
 
 .banner-nav {
   cursor: pointer;
@@ -2758,6 +2762,10 @@ header {
   width: 26px;
   height: 26px;
 }
+.article__social-item-img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
 .article__main-title {
   font-weight: bold;
   font-size: 32px;
@@ -2887,6 +2895,10 @@ header {
   top: 0;
   margin-left: 1040px;
   margin-top: 80vh;
+  transition: all 0.5s ease;
+}
+.article__to-top:hover {
+  box-shadow: 10px 10px 10px rgba(38, 103, 255, 0.05), 30px 30px 80px rgba(38, 103, 255, 0.2), 4px 4px 20px rgba(38, 103, 255, 0.25);
 }
 
 .article__rectangle {
@@ -2899,6 +2911,18 @@ header {
   margin-top: 5px;
   background: #fff;
   z-index: 100;
+}
+
+.article__to-top-anim {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.article__to-top-anim:hover {
+  transform: rotate(360deg);
 }
 
 .blog-tag {

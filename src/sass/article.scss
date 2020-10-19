@@ -57,11 +57,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
 
   &__social-item-img{
     width: 26px;
     height: 26px;
+   &:hover { 
+     transform: scale(1.2);
+     transition: all 0.3s ease;
+    }
   }
 
 
@@ -210,6 +215,10 @@ left: auto;
 top: 0;
 margin-left: 1040px;
 margin-top: 80vh;
+transition: all 0.5s ease;
+&:hover{
+  box-shadow: 10px 10px 10px rgba(38, 103, 255, 0.05), 30px 30px 80px rgba(38, 103, 255, 0.2), 4px 4px 20px rgba(38, 103, 255, 0.25);
+}
 }
 .article__rectangle {
   position: relative;
@@ -221,6 +230,18 @@ margin-top: 80vh;
   margin-top: 5px;
   background: #fff;
   z-index: 100;
+}
+.article__to-top-anim{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+transition: all 0.5s ease;
+  &:hover{
+   
+    transform: rotate(360deg);
+  }
 }
 
 .blog-tag{

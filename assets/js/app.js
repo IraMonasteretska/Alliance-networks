@@ -59121,9 +59121,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-Object(_animation__WEBPACK_IMPORTED_MODULE_2__["default"])();
-
-__webpack_require__(/*! ../js/animation.js */ "./src/js/animation.js");
+Object(_animation__WEBPACK_IMPORTED_MODULE_2__["default"])(); // require('../js/animation.js');
 
 __webpack_require__(/*! ../js/pages.js */ "./src/js/pages.js"); // require("../revealator-master/fm.revealator.jquery.js"); 
 
