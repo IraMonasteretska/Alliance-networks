@@ -22,40 +22,33 @@
           <div class="vacancies__sort-container">
             <div class="sort__by-container sort__by-container-position">
               <div class="sort__by-category sort__by-category-position sbc-first-child" > Position </div>
-               <ul class="sort__category-ul sort__category-ul-position">
-                <li class="sort__category"><label for="pos-val-1"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-1" name="val" value="val">Software Development</label></li>
-                <li class="sort__category"><label for="pos-val-2"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-2" name="val" value="val">Quality Control </label></li>
-                <li class="sort__category"><label for="pos-val-3"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-3" name="val" value="val">Project Management</label></li>
-                <li class="sort__category"><label for="pos-val-4"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-4" name="val" value="val">Business Analysis</label></li>
-                <li class="sort__category"><label for="pos-val-1"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-1" name="val" value="val">Software Development</label></li>
-                <li class="sort__category"><label for="pos-val-2"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-2" name="val" value="val">Quality Control </label></li>
-                <li class="sort__category"><label for="pos-val-3"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-3" name="val" value="val">Project Management</label></li>
-                <li class="sort__category"><label for="pos-val-4"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-4" name="val" value="val">Business Analysis</label></li>
-                <li class="sort__category"><label for="pos-val-1"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-1" name="val" value="val">Software Development</label></li>
-                <li class="sort__category"><label for="pos-val-2"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-2" name="val" value="val">Quality Control </label></li>
-                <li class="sort__category"><label for="pos-val-3"> <input class="sort__category-checkbox" type="checkbox" id="pos-val-3" name="val" value="val">Project Management</label></li>
-              </ul>
-              <p class=""><input type="button" class="button-test-position button-test" value="Select All"> </p>
+               <ul class="sort__category-ul sort__category-ul-position" id="positionOption">
+                <li class="sort__category"><label > <input class="sort__category-checkbox sort__category-checkbox-pos" type="checkbox"  name="val" value="val">Software Development</label></li>
+                <li class="sort__category"><label > <input class="sort__category-checkbox sort__category-checkbox-pos" type="checkbox"  name="val" value="val">Quality Control </label></li>
+                <li class="sort__category"><label > <input class="sort__category-checkbox sort__category-checkbox-pos" type="checkbox"  name="val" value="val">Project Management</label></li>
+                <li class="sort__category"><label > <input class="sort__category-checkbox sort__category-checkbox-pos" type="checkbox"  name="val" value="val">Business Analysis</label></li>
+               </ul>
+              <p class=""><input type="button" class="button-test-position button-test" id="positionSortBtn" value="Select All"> </p>
               </div>
               <div class="sort__by-container sort__by-container-level">
                 <div class="sort__by-category sort__by-category-level" > Levels </div>
-                 <ul class="sort__category-ul sort__category-ul-level">
-                  <li class="sort__category "><label for="lev-val-1"><input class="sort__category-checkbox" type="checkbox" id="lev-val-1" name="val" value="val">Junior</label> </li>
-                  <li class="sort__category"><label for="lev-val-2"> <input class="sort__category-checkbox" type="checkbox" id="lev-val-2" name="val" value="val">Middle</label></li>
-                  <li class="sort__category"><label for="lev-val-3"> <input class="sort__category-checkbox" type="checkbox" id="lev-val-3" name="val" value="val">Senior</label></li>
-                  <li class="sort__category"><label for="lev-val-4"> <input class="sort__category-checkbox" type="checkbox" id="lev-val-4" name="val" value="val">Leader</label></li>
+                 <ul class="sort__category-ul sort__category-ul-level" id="levelOption">
+                  <li class="sort__category "><label for="lev-val-1"><input class="sort__category-checkbox sort__category-checkbox-lev" type="checkbox" id="lev-val-1" name="val" value="val">Junior</label> </li>
+                  <li class="sort__category"><label for="lev-val-2"> <input class="sort__category-checkbox sort__category-checkbox-lev" type="checkbox" id="lev-val-2" name="val" value="val">Middle</label></li>
+                  <li class="sort__category"><label for="lev-val-3"> <input class="sort__category-checkbox sort__category-checkbox-lev" type="checkbox" id="lev-val-3" name="val" value="val">Senior</label></li>
+                  <li class="sort__category"><label for="lev-val-4"> <input class="sort__category-checkbox sort__category-checkbox-lev" type="checkbox" id="lev-val-4" name="val" value="val">Leader</label></li>
                 </ul>
-                <p class=""><input type="button" class="button-test-level button-test" value="Select All"> </p>
+                <p class=""><input type="button" class="button-test-level button-test" id="levelSortBtn" value="Select All"> </p>
                
                 </div>
                 <div class="sort__by-container sort__by-container-tag">
                   <div class="sort__by-category sort__by-category-tag" > Tags </div>
-                   <ul class="sort__category-ul sort__category-ul-tag">
-                    <li class="sort__category"><label for="tag-val-1"> <input class="sort__category-checkbox" type="checkbox" id="tag-val-1" name="val" value="val">Hot</label></li>
-                    <li class="sort__category"><label for="tag-val-2"> <input class="sort__category-checkbox" type="checkbox" id="tag-val-2" name="val" value="val">Onsite</label></li>
-                    <li class="sort__category"><label for="tag-val-3"> <input class="sort__category-checkbox" type="checkbox" id="tag-val-3" name="val" value="val">Remote Allowed</label></li>
+                   <ul class="sort__category-ul sort__category-ul-tag" id="tagOption">
+                    <li class="sort__category"><label for="tag-val-1"> <input class="sort__category-checkbox sort__category-checkbox-tag" type="checkbox" id="tag-val-1" name="val" value="val">Hot</label></li>
+                    <li class="sort__category"><label for="tag-val-2"> <input class="sort__category-checkbox sort__category-checkbox-tag" type="checkbox" id="tag-val-2" name="val" value="val">Onsite</label></li>
+                    <li class="sort__category"><label for="tag-val-3"> <input class="sort__category-checkbox sort__category-checkbox-tag" type="checkbox" id="tag-val-3" name="val" value="val">Remote Allowed</label></li>
                   </ul>
-                  <p class=""><input type="button" class="button-test-tag button-test" value="Select All"> </p>
+                  <p class=""><input type="button" class="button-test-tag button-test" id="tagSortBtn" value="Select All"> </p>
                   </div>
             <input
               type="text"
@@ -73,14 +66,8 @@
           </div>
         </form>
         <div class="sort__tags-container vacancies__sort__tags-container">
-          <button class="sort__tags-clear">Clear All</button>
-          <p class="sort__tags">
-            Middle <span class="sort__tags-close"></span>
-          </p>
-          <p class="sort__tags">UI/UX<span class="sort__tags-close"></span></p>
-          <p class="sort__tags">
-            Learning & Certification <span class="sort__tags-close"></span>
-          </p>
+          <button class="sort__tags-clear" id="sortTagClearVac">Clear All</button>
+         <div id="selectedOptionsVac"></div>
         </div>
 
         <div class="vacancies__result">

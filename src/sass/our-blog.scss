@@ -439,10 +439,10 @@
   justify-content: space-between;
 }
 
-// .sort__tags-block.active{
-//   display: block;
+.sort__tags-block.active{
+  display: block;
 
-// }
+}
 
 .sort__by-teg-req.active {
   &:after {
@@ -470,6 +470,8 @@
 #sonBlockCategory {
   display: flex;
   justify-content: start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 // .sort__tag{
