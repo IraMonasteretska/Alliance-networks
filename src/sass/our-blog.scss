@@ -238,6 +238,12 @@
     }
   }
 
+  &__pagination-item{
+    &:hover{
+      color: #2667FF;
+    }
+  }
+
   &__data-container {
     width: 90%;
     margin: 0 auto;

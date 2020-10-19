@@ -59434,7 +59434,7 @@ sortTagClearVac.addEventListener("click", function () {
     sortCategory[i].childNodes[0].childNodes[1].checked = false;
   }
 }); // $ git add .
-// $ git commit -m apdate alex'
+// $ git commit -m'apdate alex'
 // $ git push
 
 /***/ }),

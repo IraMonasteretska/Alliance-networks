@@ -2040,13 +2040,10 @@ header {
   color: #B1CAFF;
   opacity: 0.4;
 }
-<<<<<<< HEAD
-=======
 .cloud__nav:hover {
   color: #B1CAFf;
   opacity: 0.4;
 }
->>>>>>> c3b48be2232510612c728a1429cb69b40427d704
 
 .banner-nav {
   cursor: pointer;
@@ -2266,6 +2263,9 @@ header {
 }
 .news__item-title:hover {
   color: #2667ff;
+}
+.news__pagination-item:hover {
+  color: #2667FF;
 }
 .news__data-container {
   width: 90%;

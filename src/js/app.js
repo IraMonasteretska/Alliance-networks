@@ -341,5 +341,5 @@ sortTagClearVac.addEventListener("click", function() {
 
 
 // $ git add .
-// $ git commit -m apdate alex'
+// $ git commit -m'apdate alex'
 // $ git push
