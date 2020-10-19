@@ -59121,9 +59121,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-Object(_animation__WEBPACK_IMPORTED_MODULE_2__["default"])();
-
-__webpack_require__(/*! ../js/animation.js */ "./src/js/animation.js");
+Object(_animation__WEBPACK_IMPORTED_MODULE_2__["default"])(); // require('../js/animation.js');
 
 __webpack_require__(/*! ../js/pages.js */ "./src/js/pages.js"); // require("../revealator-master/fm.revealator.jquery.js"); 
 
@@ -59773,8 +59771,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(".btn-general2").mouseout(function
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\vvn09\Desktop\Alliance-networks\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\vvn09\Desktop\Alliance-networks\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\User\Documents\Alliance-networks\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\User\Documents\Alliance-networks\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })

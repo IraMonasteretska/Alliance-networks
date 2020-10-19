@@ -238,15 +238,11 @@ margin-bottom: 35px;
 .cloud__nav{
   color: #B1CAFF ;
 opacity: 0.4;
-// &:hover{
-//  color: #fff;
-//   opacity: 1;
+&:hover{
+ color: #B1CAFF;
+  opacity: 0.4;
 
-// &:hover{
-//  color: #B1CAFf;
-//   opacity: 0.4;
-
-// }
+}
 }
 
 .banner-nav{
@@ -256,5 +252,5 @@ cursor: pointer;
 .cloud__nav-home{
   &:hover{
     color: #FFF;
-  }
+}
 }

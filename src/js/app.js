@@ -5,7 +5,7 @@ import createAnimation from "./animation";
 import { blogSelect } from './blogSelect.js';
 createAnimation();
 
-require('../js/animation.js');
+// require('../js/animation.js');
 require("../js/pages.js");
 // require("../revealator-master/fm.revealator.jquery.js"); 
 $(document).ready(function() {
