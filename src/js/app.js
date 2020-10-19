@@ -7,7 +7,7 @@ createAnimation();
 
 // require('../js/animation.js');
 require("../js/pages.js");
-require("../revealator-master/fm.revealator.jquery.js");
+// require("../revealator-master/fm.revealator.jquery.js");
 $(document).ready(function() {
   $(".sort__by-category-position").click(function(event) {
     $(

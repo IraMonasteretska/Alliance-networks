@@ -24,7 +24,7 @@
 
 .svg-e {
   position: absolute;
-  right: -70px;
+  right: 40px;
   margin-top: 950px;
 }
 
@@ -3463,12 +3463,8 @@ header {
 
 .vacancies-single__top-btn:before {
   position: absolute;
-<<<<<<< HEAD
   content: '';
-=======
-  content: "";
   transition: all 0.5s ease-out;
->>>>>>> 8fe926de5a180e0878005f9092ca7f1d05bfd2ab
   width: 216px;
   height: 56px;
   background: rgba(255, 134, 174, 0.15);
@@ -3770,7 +3766,6 @@ header {
   .o365-page__left-part .o365-page__left-title {
     font-size: 40px;
   }
-
   .vacancies__sort__close-search {
     left: -80px;
   }
@@ -3811,7 +3806,6 @@ header {
   .o365-page__form-flex .o365-page__input-select {
     width: 57%;
   }
-
   .animation-about {
     margin-top: -40px;
     right: -50px;
@@ -3852,7 +3846,6 @@ header {
   .o365-page__form-flex .o365-page__input-select {
     width: 50%;
   }
-
   .sort__by-category {
     width: 110px;
   }
@@ -3952,50 +3945,41 @@ header {
     justify-content: center;
     align-items: center;
   }
-
   .o365-page .o365-page__form {
     width: 100%;
     text-align: center;
   }
-
   .o365-page .o365-page__input {
     text-align: center;
     width: 80%;
     padding: 0;
   }
-
   .o365-page .o365-page__form-flex {
     width: 80%;
     margin: 0 auto;
   }
-
   .o365-page__form-flex .o365-page__input-select {
     width: 60%;
   }
-
   .o365-page .o365-page__left-title {
     font-size: 50px;
     margin-top: 10px;
     padding-right: 0px;
   }
-
   .o365-page .o365-page__text--blue {
     margin-top: -130px;
   }
-
   .o365-page .o365-page__left-text {
     font-size: 15px;
     color: #1E1E1E;
     margin-top: 45px;
     margin-bottom: -30px;
   }
-
   .o365-page .o365-page__flex-btn {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-
   .resources__title {
     font-size: 37px;
   }
@@ -4089,7 +4073,6 @@ header {
     margin-bottom: 0;
     line-height: 42px;
   }
-
   .o365-page__form-flex .o365-page__input-select {
     width: 56%;
   }
@@ -4099,15 +4082,12 @@ header {
   .o365-page .o365-page__input {
     width: 100%;
   }
-
   .o365-page .o365-page__form-flex {
     width: 100%;
   }
-
   .o365-page__form-flex .o365-page__input-select {
     width: 59%;
   }
-
   .article__flex-container {
     margin-top: 50px;
   }
@@ -4187,14 +4167,14 @@ header {
     margin-left: 0px;
   }
   .o365-page .o365-page__first-item:after, .o365-page .o365-page__two-item:after {
-    content: "";
+    content: '';
     width: 50%;
     height: 50%;
     background-size: contain;
     top: -90px;
   }
   .o365-page .o365-page__first-item:after {
-    content: "";
+    content: '';
     top: -105px;
   }
   .o365-page .o365-page__big-title {
@@ -4223,7 +4203,6 @@ header {
   .o365-page .o365-page__left-title {
     font-size: 40px;
   }
-
   .animation-about {
     margin-left: -105px;
   }
@@ -4552,16 +4531,17 @@ header {
     width: 100% !important;
   }
 }
-<<<<<<< HEAD
-=======
+
 .o365-page__form-flex .select-dropdown {
   position: relative;
   display: inline-block;
   max-width: 100%;
 }
+
 .o365-page__form-flex .select-dropdown::last-child {
   margin-right: 0px;
 }
+
 .o365-page__form-flex .select-dropdown__button {
   padding-left: 20px;
   height: 56px;
@@ -4577,15 +4557,18 @@ header {
   margin-left: -20px;
   width: 220px;
 }
+
 .o365-page__form-flex .select-dropdown__button:focus {
   border: 1px solid #2667FF;
   outline: none;
 }
+
 .o365-page__form-flex .select-dropdown__button .zmdi-chevron-down {
   position: absolute;
   right: 10px;
   top: 48px;
 }
+
 .o365-page__form-flex .select-dropdown__button .zmdi-chevron-down:after {
   transition: all 0.5s ease;
   position: absolute;
@@ -4597,9 +4580,11 @@ header {
   margin-left: -15px;
   margin-top: 8px;
 }
+
 .o365-page__form-flex .select-dropdown__button .zmdi-chevron-down.active:after {
   transform: rotate(180deg);
 }
+
 .o365-page__form-flex .select-dropdown__list {
   position: absolute;
   display: block;
@@ -4625,11 +4610,13 @@ header {
   border-radius: 6px;
   margin-top: 5px;
 }
+
 .o365-page__form-flex .select-dropdown__list.active {
   opacity: 1;
   pointer-events: auto;
   transform: scale(1, 1);
 }
+
 .o365-page__form-flex .select-dropdown__list-item {
   display: block;
   list-style-type: none;
@@ -4643,11 +4630,11 @@ header {
   transition: all ease-in-out 0.3s;
   border: 1px solid white;
 }
+
 .o365-page__form-flex .select-dropdown__list-item:hover {
   color: #64AAFC;
   transition: all ease-in-out 0.3s;
 }
->>>>>>> 8fe926de5a180e0878005f9092ca7f1d05bfd2ab
 
 .block-0365 {
   margin-top: 180px;
@@ -4854,12 +4841,14 @@ header {
   background: url(../../img/o365/o365-line.png);
   background-position: 0 -110px;
 }
+
 .o365-page__container {
   max-width: 1600px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .o365-page__first-text {
   font-weight: 300;
   font-size: 15px;
@@ -4869,45 +4858,54 @@ header {
   margin: 0 auto;
   margin-top: 30px;
 }
+
 .o365-page__first-text-pad {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .o365-page__items {
   max-width: 955px;
   margin: 0 auto;
   margin-top: 100px;
 }
+
 .o365-page__item-title {
   font-weight: bold;
   font-size: 24px;
   color: #2667FF;
   margin-left: 190px;
 }
+
 .o365-page__first-item:after {
   background: url(../../img/o365/o365-item2.png);
   background-repeat: no-repeat;
   z-index: -1;
 }
+
 .o365-page__two-item {
   margin-top: 110px;
 }
+
 .o365-page__two-item:after {
   background: url(../../img/o365/o365-item1.png);
   background-repeat: no-repeat;
   z-index: -1;
 }
+
 .o365-page__first-item, .o365-page__two-item {
   position: relative;
 }
+
 .o365-page__first-item:after, .o365-page__two-item:after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
   top: -50px;
   left: 0;
 }
+
 .o365-page__item-text {
   font-weight: 600;
   font-size: 15px;
@@ -4916,12 +4914,15 @@ header {
   max-width: 762px;
   margin-left: 190px;
 }
+
 .o365-page__left {
   width: 50%;
 }
+
 .o365-page__right {
   width: 50%;
 }
+
 .o365-page__flex-container {
   display: flex;
   justify-content: space-between;
@@ -4929,12 +4930,14 @@ header {
   margin: 0 auto;
   margin-top: 170px;
 }
+
 .o365-page__big-title {
   font-weight: bold;
   font-size: 40px;
   color: #000000;
   max-width: 320px;
 }
+
 .o365-page__pseudo-title {
   font-weight: bold;
   font-size: 18px;
@@ -4942,14 +4945,17 @@ header {
   color: #2E2E2E;
   margin-left: 15px;
 }
+
 .o365-page__text-in-cont {
   max-width: 540px;
 }
+
 .o365-page__bg-container {
   background: url(../../img/o365/o365-bg-form.png);
   background-repeat: no-repeat;
   background-position: 70% 70px;
 }
+
 .o365-page__flex-container-form {
   display: flex;
   justify-content: space-between;
@@ -4959,11 +4965,13 @@ header {
   padding-right: 20px;
   margin-top: 210px;
 }
+
 .o365-page__text--blue {
   font-weight: 300;
   font-size: 24px;
   color: #2667FF;
 }
+
 .o365-page__left-title {
   font-weight: bold;
   font-size: 54px;
@@ -4971,6 +4979,7 @@ header {
   margin-top: 100px;
   padding-right: 20px;
 }
+
 .o365-page__left-text {
   font-weight: 300;
   font-size: 15px;
@@ -4979,11 +4988,13 @@ header {
   max-width: 400px;
   padding-right: 20px;
 }
+
 .o365-page__right-part {
   max-width: 773px;
   margin-top: 100px;
   width: 100%;
 }
+
 .o365-page__input {
   width: 84%;
   height: 56px;
@@ -4996,41 +5007,52 @@ header {
   padding-left: 20px;
   transition: all 1s ease-out;
 }
+
 .o365-page__input:focus {
   border: 1px solid #2667FF;
 }
+
 .o365-page__input::-webkit-input-placeholder {
   color: #828282;
 }
+
 .o365-page__input::-moz-placeholder {
   color: #828282;
 }
+
 .o365-page__input:-moz-placeholder {
   color: #828282;
 }
+
 .o365-page__input:-ms-input-placeholder {
   color: #828282;
 }
+
 .o365-page__input-select {
   width: 62%;
 }
+
 .o365-page__form-flex {
   display: flex;
   justify-content: space-between;
   width: 84%;
 }
+
 .o365-page__flex-btn {
   display: flex;
   justify-content: flex-end;
   width: 85%;
 }
+
 .o365-page__btn-form {
   margin-bottom: 100px;
   transition: all 0.5s ease-out;
 }
+
 .o365-page__btn-form:hover {
   background: #2667ff;
 }
+
 .o365-page__btn-form:hover:before {
   transition: all 0.5s ease-out;
   margin-top: -15px;
