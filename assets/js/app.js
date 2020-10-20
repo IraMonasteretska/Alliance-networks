@@ -59214,9 +59214,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
       levelBtn.classList.toggle("active");
     }
   });
-});
-var test = document.querySelector(".sort__category-ul-level");
-console.log(test); // visible tags block
+}); // visible tags block
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".sort__by-teg-req").click(function (event) {
@@ -59237,7 +59235,6 @@ if (searchInput) {
     searchInput.value = "";
   };
 
-  // console.log(searchInput.value)
   clearSearch.addEventListener("click", getClearSearch);
 } // vacancies form accordion
 
@@ -59255,7 +59252,6 @@ function createSelect() {
       elementParentSpan;
 
   for (var select_i = 0, len = select.length; select_i < len; select_i++) {
-    //console.log('selects init');
     select[select_i].style.display = "none";
     wrapElement(document.getElementById(select[select_i].id), document.createElement("div"), select_i, select[select_i].getAttribute("placeholder-text"));
 
@@ -59364,112 +59360,123 @@ if (document.querySelector('#sort-category-blog-father')) {
 }
 
 var inputForUrlVac = document.getElementById('inputForUrlVac');
-var levelOption = document.querySelector("#levelOption");
-var tagOption = document.querySelector("#tagOption");
-var positionOption = document.querySelector("#positionOption");
-var selectedOptionsVac = document.querySelector("#selectedOptionsVac");
-positionOption.addEventListener("click", getOption);
-tagOption.addEventListener("click", getOption);
-levelOption.addEventListener("click", getOption);
 
-function getOption(event) {
-  var target = event.target;
+if (document.querySelector('#selectedOptionsVac')) {
+  var getOption = function getOption(event) {
+    var target = event.target;
 
-  if (target.checked) {
-    var sortTag = document.createElement("p");
-    var sortTagClose = document.createElement("span");
-    sortTag.innerHTML = target.parentNode.textContent;
-    inputForUrlVac.value += target.parentNode.textContent.replace(/\s/g, '') + ',', '';
-    selectedOptionsVac.appendChild(sortTag);
-    sortTag.classList.add("sort__tags");
-    sortTag.appendChild(sortTagClose);
-    sortTagClose.classList.add("sort__tags-close");
-  } else if (target.checked == false) {
-    for (var i = 0; i < selectedOptionsVac.childNodes.length; i++) {
-      if (selectedOptionsVac.childNodes[i].textContent == target.parentNode.textContent) {
-        selectedOptionsVac.childNodes[i].parentNode.removeChild(selectedOptionsVac.childNodes[i]);
+    if (target.checked) {
+      var sortTag = document.createElement("p");
+      var sortTagClose = document.createElement("span");
+      sortTag.innerHTML = target.parentNode.textContent;
+      inputForUrlVac.value += target.parentNode.textContent.replace(/\s/g, '') + ',', '';
+      selectedOptionsVac.appendChild(sortTag);
+      sortTag.classList.add("sort__tags");
+      sortTag.appendChild(sortTagClose);
+      sortTagClose.classList.add("sort__tags-close"); // hide btn CLEAR ALL
+
+      hideBtnVac();
+    } else if (target.checked == false) {
+      for (var i = 0; i < selectedOptionsVac.childNodes.length; i++) {
+        if (selectedOptionsVac.childNodes[i].textContent == target.parentNode.textContent) {
+          selectedOptionsVac.childNodes[i].parentNode.removeChild(selectedOptionsVac.childNodes[i]);
+        }
       }
+
+      hideBtnVac();
+      inputForUrlVac.value = inputForUrlVac.value.replace(target.parentNode.textContent.replace(/\s/g, '') + ',', '');
+    } // console.log(inputForUrlVac.value);
+
+  };
+
+  var getAllSelect = function getAllSelect(sortClasCat) {
+    var sortCategoryCheckbox = document.querySelectorAll(sortClasCat);
+
+    for (var i = 0; i < sortCategoryCheckbox.length; i++) {
+      sortCategoryCheckbox[i].checked = true;
+      inputForUrlVac.value += sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g, '') + ',', ''; // console.log(sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g,'')+',', '');
+      // if(  inputForUrlVac.value = sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g,'')+',', ''){
+      // }
+
+      for (var j = 1; j < selectedOptionsVac.childNodes.length; j++) {
+        if (selectedOptionsVac.childNodes[j].textContent == sortCategoryCheckbox[i].parentNode.textContent) {
+          selectedOptionsVac.childNodes[j].parentNode.removeChild(selectedOptionsVac.childNodes[j]);
+        }
+      }
+
+      var sortTag = document.createElement("p");
+      var sortTagClose = document.createElement("span");
+      sortTag.innerHTML = sortCategoryCheckbox[i].parentNode.textContent;
+      selectedOptionsVac.appendChild(sortTag);
+      sortTag.classList.add("sort__tags");
+      sortTag.appendChild(sortTagClose);
+      sortTagClose.classList.add("sort__tags-close");
     }
 
+    hideBtnVac();
+  };
+
+  var hideBtnVac = function hideBtnVac() {
+    var selectedOptionsVacancies = document.querySelector("#selectedOptionsVac");
+
+    if (selectedOptionsVacancies.textContent == '') {
+      sortTagClearVac.style.display = 'none';
+    } else {
+      sortTagClearVac.style.display = 'block';
+    }
+  };
+
+  var levelOption = document.querySelector("#levelOption");
+  var tagOption = document.querySelector("#tagOption");
+  var positionOption = document.querySelector("#positionOption");
+  var selectedOptionsVac = document.querySelector("#selectedOptionsVac");
+  positionOption.addEventListener("click", getOption);
+  tagOption.addEventListener("click", getOption);
+  levelOption.addEventListener("click", getOption);
+  var tagSortBtn = document.querySelector("#tagSortBtn");
+  tagSortBtn.addEventListener("click", function () {
+    return getAllSelect('.sort__category-checkbox-tag');
+  });
+  var levelSortBtn = document.querySelector("#levelSortBtn");
+  levelSortBtn.addEventListener("click", function () {
+    return getAllSelect('.sort__category-checkbox-lev');
+  });
+  var positionSortBtn = document.querySelector("#positionSortBtn");
+  positionSortBtn.addEventListener("click", function () {
+    return getAllSelect('.sort__category-checkbox-pos');
+  });
+  selectedOptionsVac.addEventListener("click", function (event) {
+    var target = event.target;
+
+    if (target == selectedOptionsVac || target.classList.contains("sort__tags")) {
+      return;
+    }
+
+    target.parentNode.parentNode.removeChild(target.parentNode);
     inputForUrlVac.value = inputForUrlVac.value.replace(target.parentNode.textContent.replace(/\s/g, '') + ',', '');
-  }
+    var sortCategory = document.querySelectorAll(".sort__category");
 
-  console.log(inputForUrlVac.value);
-}
-
-var tagSortBtn = document.querySelector("#tagSortBtn");
-tagSortBtn.addEventListener("click", function () {
-  return getAllSelect('.sort__category-checkbox-tag');
-});
-var levelSortBtn = document.querySelector("#levelSortBtn");
-levelSortBtn.addEventListener("click", function () {
-  return getAllSelect('.sort__category-checkbox-lev');
-});
-var positionSortBtn = document.querySelector("#positionSortBtn");
-positionSortBtn.addEventListener("click", function () {
-  return getAllSelect('.sort__category-checkbox-pos');
-});
-
-function getAllSelect(sortClasCat) {
-  var sortCategoryCheckbox = document.querySelectorAll(sortClasCat);
-
-  for (var i = 0; i < sortCategoryCheckbox.length; i++) {
-    sortCategoryCheckbox[i].checked = true;
-    inputForUrlVac.value += sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g, '') + ',', '';
-    console.log(sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g, '') + ',', ''); // if(  inputForUrlVac.value = sortCategoryCheckbox[i].parentNode.textContent.replace(/\s/g,'')+',', ''){
-    // }
-
-    for (var j = 1; j < selectedOptionsVac.childNodes.length; j++) {
-      if (selectedOptionsVac.childNodes[j].textContent == sortCategoryCheckbox[i].parentNode.textContent) {
-        selectedOptionsVac.childNodes[j].parentNode.removeChild(selectedOptionsVac.childNodes[j]);
+    for (var i = 0; i < sortCategory.length; i++) {
+      if (sortCategory[i].textContent == target.parentNode.textContent) {
+        sortCategory[i].childNodes[0].childNodes[1].checked = false;
       }
     }
 
-    var sortTag = document.createElement("p");
-    var sortTagClose = document.createElement("span");
-    sortTag.innerHTML = sortCategoryCheckbox[i].parentNode.textContent;
-    selectedOptionsVac.appendChild(sortTag);
-    sortTag.classList.add("sort__tags");
-    sortTag.appendChild(sortTagClose);
-    sortTagClose.classList.add("sort__tags-close");
-  }
-}
+    hideBtnVac();
+  });
+  var sortTagClearVac = document.querySelector("#sortTagClearVac");
+  sortTagClearVac.addEventListener("click", function () {
+    var selectedOptions = document.querySelector("#selectedOptionsVac");
+    selectedOptions.textContent = '';
+    var sortCategory = document.querySelectorAll(".sort__category");
 
-selectedOptionsVac.addEventListener("click", function (event) {
-  var target = event.target;
-
-  if (target == selectedOptionsVac || target.classList.contains("sort__tags")) {
-    return;
-  }
-
-  target.parentNode.parentNode.removeChild(target.parentNode);
-  inputForUrlVac.value = inputForUrlVac.value.replace(target.parentNode.textContent.replace(/\s/g, '') + ',', '');
-  var sortCategory = document.querySelectorAll(".sort__category");
-
-  for (var i = 0; i < sortCategory.length; i++) {
-    if (sortCategory[i].textContent == target.parentNode.textContent) {
+    for (var i = 0; i < sortCategory.length; i++) {
       sortCategory[i].childNodes[0].childNodes[1].checked = false;
     }
-  }
-});
-var sortTagClearVac = document.querySelector("#sortTagClearVac");
-sortTagClearVac.addEventListener("click", function () {
-  var selectedOptions = document.querySelector("#selectedOptionsVac");
-  selectedOptions.textContent = '';
-  var sortCategory = document.querySelectorAll(".sort__category");
 
-  for (var i = 0; i < sortCategory.length; i++) {
-    sortCategory[i].childNodes[0].childNodes[1].checked = false;
-  }
-
-  inputForUrlVac.value = '';
-});
-var selectedOptionsVacancies = document.querySelector("#selectedOptionsVac");
-console.log(selectedOptionsVacancies);
-console.log(sortTagClearVac);
-
-if (selectedOptionsVacancies == '') {
-  sortTagClearVac.style.display = 'none';
+    inputForUrlVac.value = '';
+    hideBtnVac();
+  });
 }
 
 /***/ }),
