@@ -59477,6 +59477,7 @@ if (document.querySelector('#selectedOptionsVac')) {
     inputForUrlVac.value = '';
     hideBtnVac();
   });
+  hideBtnVac();
 }
 
 /***/ }),

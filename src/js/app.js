@@ -241,6 +241,7 @@ function fadeOutnojquery(el) {
   }, 16);
 }
 window.onload = function() {
+
   setTimeout(function() {
     fadeOutnojquery(hellopreloader);
   }, 1000);
@@ -355,7 +356,7 @@ sortTagClearVac.addEventListener("click", function() {
     hideBtnVac()
 });
 
-
+hideBtnVac()
 function hideBtnVac(){
 const selectedOptionsVacancies = document.querySelector("#selectedOptionsVac");
 if (selectedOptionsVacancies.textContent == ''){
